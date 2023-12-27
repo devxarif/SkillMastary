@@ -4,6 +4,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\AuthController;
 use App\Http\Controllers\Frontend\WebsiteController;
 
+Route::get('/test', function(){
+
+    return App\Enums\UserRoleEnum::ROLE_STUDENT;
+    return App\Enums\UserRoleEnum::getValues();
+});
+
 Route::name('website.')->group(function(){
     Route::controller(AuthController::class)->group(function(){
         Route::get('/login', 'login')->name('login');
