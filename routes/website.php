@@ -6,7 +6,7 @@ use App\Http\Controllers\Frontend\WebsiteController;
 
 Route::get('/test', function(){
 
-    return App\Enums\UserRoleEnum::ROLE_STUDENT;
+    return App\Enums\UserRoleEnum::ROLE_STUDENT?->value;
     return App\Enums\UserRoleEnum::getValues();
 });
 

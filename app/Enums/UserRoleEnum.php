@@ -2,9 +2,12 @@
 
 namespace App\Enums;
 
+
 enum UserRoleEnum: string {
     case ROLE_STUDENT = 'student';
     case ROLE_INSTRUCTOR = 'instructor';
+    case ROLE_AFFILIATOR = 'affiliator';
+    case ROLE_ORGANIZATION = 'organization';
 
     public static function toArray(): array
     {
