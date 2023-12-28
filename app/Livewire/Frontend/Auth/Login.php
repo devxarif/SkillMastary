@@ -21,11 +21,11 @@ class Login extends Component
 
     public function login()
     {
-        dd([
-            'email' => $this->email,
-            'password' => $this->password,
-            'remember' => $this->remember,
-        ]);
+        // dd([
+        //     'email' => $this->email,
+        //     'password' => $this->password,
+        //     'remember' => $this->remember,
+        // ]);
         $this->validate([
             'email' => 'required',
             'password' => 'required|string',

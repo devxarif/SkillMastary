@@ -18689,3 +18689,15 @@ text-align: center;
 z-index: 4;
 }
 /*# sourceMappingURL=main.css.map */
+
+button:disabled {
+    opacity: 0.3;
+    background-color: #666;
+}
+
+button:hover:disabled {
+    opacity: 0.3;
+    background-color: #666;
+    box-shadow: none;
+    cursor: not-allowed;
+}

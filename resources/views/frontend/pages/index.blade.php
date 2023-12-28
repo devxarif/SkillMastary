@@ -3,9 +3,6 @@
 @section('title', __('Home'))
 
 @section('content')
-
-@livewire('counter')
-
 <!--Hero Section -->
 <div class="hero-section">
     <div class="container">

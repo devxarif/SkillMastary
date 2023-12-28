@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\AuthController;
+use App\Http\Controllers\Frontend\StudentController;
 use App\Http\Controllers\Frontend\WebsiteController;
+use App\Http\Controllers\Frontend\InstructorController;
 
 Route::get('/test', function(){
 
@@ -11,13 +13,26 @@ Route::get('/test', function(){
 });
 
 Route::name('website.')->group(function(){
+    // Authentication Controller
     Route::controller(AuthController::class)->group(function(){
         Route::get('/login', 'login')->name('login');
         Route::get('/register', 'register')->name('register');
     });
 
+    // Website Controller
     Route::controller(WebsiteController::class)->group(function(){
         Route::get('/', 'index')->name('index');
+        Route::get('/user/dashboard', 'dashboard')->name('user.dashboard');
+    });
+
+    // Student Controller
+    Route::controller(StudentController::class)->group(function(){
+        Route::get('dashboard', 'dashboard')->name('dashboard');
+    });
+
+    // Student Controller
+    Route::controller(InstructorController::class)->group(function(){
+        Route::get('dashboard', 'dashboard')->name('dashboard');
     });
 });
 

@@ -7,7 +7,7 @@
                 <div class="form-field form-field--">
                     <label for="email">{{ __('Email Address') }}</label>
                     <div class="field-wrapper">
-                        <input wire:model="email" type="email" placeholder="{{ __('Email Address') }}" id="email" />
+                        <input wire:model="email" type="email" placeholder="{{ __('Email Address') }}" id="email" class="@error('email') border-danger @enderror"/>
                         <span class="icon icon--success">
                             <img src="{{ asset('frontend') }}/images/svg-icon/checkcircle.svg"
                                 alt="success-icon" />
@@ -17,13 +17,16 @@
                                 alt="warning-icon" />
                         </span>
                     </div>
+                    @error('email')
+                        <small class="text-danger">{{ $message }}</small>
+                    @enderror
                 </div>
             </div>
             <div class="form-group ">
                 <div class="form-field form-field--">
                     <label for="password">{{ __('Password') }}</label>
                     <div class="field-wrapper">
-                        <input wire:model="password" type="password" placeholder="Create Password" id="password" />
+                        <input wire:model="password" type="password" placeholder="Create Password" id="password" class="@error('password') border-danger @enderror" />
                         <span class="icon icon--success">
                             <img src="{{ asset('frontend') }}/images/svg-icon/checkcircle.svg"
                                 alt="success-icon" />
@@ -37,6 +40,9 @@
                                 alt="eye-icon" />
                         </span>
                     </div>
+                    @error('password')
+                        <small class="text-danger">{{ $message }}</small>
+                    @enderror
                 </div>
             </div>
             <div class="form-group  form-group--2 align-items-center my-2 py-2">
@@ -46,7 +52,7 @@
                         {{ __('Remember Me') }}
                     </label>
                 </div>
-                <button type="submit" class="button button--md button-i--r">
+                <button wire:loading.attr="disabled" type="submit" class="button button--md button-i--r">
                     {{ __('Sign In') }}
                     <span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
