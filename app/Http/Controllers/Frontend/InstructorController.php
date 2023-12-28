@@ -7,5 +7,13 @@ use Illuminate\Http\Request;
 
 class InstructorController extends Controller
 {
-    //
+    /**
+     * Instructor dashboard
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function dashboard()
+    {
+        return view('frontend.pages.instructor.dashboard');
+    }
 }

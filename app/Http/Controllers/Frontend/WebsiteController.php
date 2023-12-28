@@ -9,26 +9,24 @@ class WebsiteController extends Controller
 {
     public function index()
     {
-        return view('frontend.pages.index');
+        return view('frontend.pages.others.index');
     }
 
     /**
      * Show the application dashboard.
      *
-     * @return Renderable
+     * @return \Illuminate\Contracts\Support\Renderable
      */
     public function dashboard()
     {
         try {
-            if (auth('user')->check() && authUser()->role == 'candidate') {
-                return redirect()->route('candidate.dashboard');
-            } elseif (auth('user')->check() && authUser()->role == 'company') {
-                storePlanInformation();
-
-                return redirect()->route('company.dashboard');
+            if (authCheck() && authUser()->role == 'student') {
+                return to_route('student.dashboard');
+            } elseif (authCheck() && authUser()->role == 'instructor') {
+                return to_route('instructor.dashboard');
             }
 
-            return redirect('login');
+            return to_route('website.login');
         } catch (\Exception $e) {
             flashError('An error occurred: '.$e->getMessage());
 

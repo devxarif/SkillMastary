@@ -12,9 +12,9 @@ use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\Frontend\AuthController;
 use Illuminate\Support\Facades\Route;
 
-Route::controller(AuthController::class)->group(function(){
-    Route::get('/login', 'login')->name('login');
-});
+// Route::controller(AuthController::class)->group(function(){
+//     Route::get('/login', 'login')->name('login');
+// });
 
 
 // Route::middleware('guest')->group(function () {

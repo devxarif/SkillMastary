@@ -26,13 +26,13 @@ Route::name('website.')->group(function(){
     });
 
     // Student Controller
-    Route::controller(StudentController::class)->group(function(){
-        Route::get('dashboard', 'dashboard')->name('dashboard');
+    Route::controller(StudentController::class)->middleware('student')->prefix('student')->name('student.')->group(function(){
+        Route::get('/dashboard', 'dashboard')->name('dashboard');
     });
 
-    // Student Controller
-    Route::controller(InstructorController::class)->group(function(){
-        Route::get('dashboard', 'dashboard')->name('dashboard');
+    // Instructor Controller
+    Route::controller(InstructorController::class)->middleware('instructor')->prefix('instructor')->name('instructor.')->group(function(){
+        Route::get('/dashboard', 'dashboard')->name('dashboard');
     });
 });
 
