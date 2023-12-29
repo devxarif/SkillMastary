@@ -25,9 +25,9 @@
             <div class="form-group ">
                 <div class="form-field form-field--">
                     <label for="password">{{ __('Password') }}</label>
-                    <div class="field-wrapper position-relative">
+                    <div class="field-wrapper">
                         <input wire:model="password" :type="openEye ? 'text':'password'" placeholder="Create Password" id="password" class="@error('password') border-danger @enderror" />
-                        <span @click="openEye = !openEye" style="position: absolute;right: 2%;top: 30%;">
+                        <span @click="openEye = !openEye" style="position: absolute;right: 2%;top: 30%;cursor: pointer">
                             <x-svg.eye-open-icon xShow="!openEye" />
                             <x-svg.eye-close-icon xShow="openEye" />
                         </span>

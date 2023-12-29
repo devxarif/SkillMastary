@@ -21,10 +21,17 @@
                     </a>
                 </div>
                 <div class="header-bottom-right">
-                    <div class="header-btn-wrap d-flex align-items-center">
-                        <p>{{ __("Don't have an account") }}</p>
-                        <a class="button button--md button-p-s" href="{{ route('website.register') }}">{{ __('Create Account') }}</a>
-                    </div>
+                    @if (request()->routeIs('website.register'))
+                        <div class="header-btn-wrap d-flex align-items-center">
+                            <p>{{ __("Already have an account ?") }}</p>
+                            <a class="button button--md button-p-s" href="{{ route('website.login') }}">{{ __('Sign In') }}</a>
+                        </div>
+                    @else
+                        <div class="header-btn-wrap d-flex align-items-center">
+                            <p>{{ __("Don't have an account") }}</p>
+                            <a class="button button--md button-p-s" href="{{ route('website.register') }}">{{ __('Create Account') }}</a>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

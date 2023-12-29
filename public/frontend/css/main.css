@@ -18701,3 +18701,31 @@ button:hover:disabled {
     box-shadow: none;
     cursor: not-allowed;
 }
+
+/* .btn-outline-primary {
+    color: #ff6636 !important;
+    border-color: #ff6636 !important;
+} */
+
+.btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active, .btn-outline-primary:focus {
+    color: #fff !important;
+    background-color: #ff6636;
+    border-color: #ff6636;
+}
+
+.btn-outline-primary {
+    color: #ff6636 !important;
+    border-color: #ff6636 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+    background-color: #ff6636;
+    border-color: #ff6636;
+}
+
+.w-30 {
+    width: 30%!important
+}
