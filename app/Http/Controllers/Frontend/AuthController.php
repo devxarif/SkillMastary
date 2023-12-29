@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 class AuthController extends Controller
 {
     public function login(){
+        if(authCheck()){
+            return redirect()->route('website.dashboard');
+        }
+
         return view('frontend.auth.login');
     }
 

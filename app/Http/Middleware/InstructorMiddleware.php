@@ -16,9 +16,9 @@ class InstructorMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         if (authUser()->role == 'instructor') {
-            return redirect()->route('instructor.dashboard');
-        }elseif (authUser()->role == 'student') {
             return $next($request);
+        }elseif (authUser()->role == 'student') {
+            return redirect()->route('website.instructor.dashboard');
         }
 
         return to_route('website.login');

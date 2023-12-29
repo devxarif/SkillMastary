@@ -1,6 +1,6 @@
 <div class="register-right">
     <div class="register-formWrapper">
-        <form wire:submit="login" class="form">
+        <form wire:submit="login" class="form" x-data="{ openEye: false }">
             <h2 class="register-title">{{ __('Sign In to your account') }}</h2>
 
             <div class="form-group">
@@ -25,19 +25,11 @@
             <div class="form-group ">
                 <div class="form-field form-field--">
                     <label for="password">{{ __('Password') }}</label>
-                    <div class="field-wrapper">
-                        <input wire:model="password" type="password" placeholder="Create Password" id="password" class="@error('password') border-danger @enderror" />
-                        <span class="icon icon--success">
-                            <img src="{{ asset('frontend') }}/images/svg-icon/checkcircle.svg"
-                                alt="success-icon" />
-                        </span>
-                        <span class="icon icon--warning">
-                            <img src="{{ asset('frontend') }}/images/svg-icon/Warning.svg"
-                                alt="warning-icon" />
-                        </span>
-                        <span class="icon icon--eye" onclick="showPassword('password',this)">
-                            <img src="{{ asset('frontend') }}/images/svg-icon/eye-open.svg"
-                                alt="eye-icon" />
+                    <div class="field-wrapper position-relative">
+                        <input wire:model="password" :type="openEye ? 'text':'password'" placeholder="Create Password" id="password" class="@error('password') border-danger @enderror" />
+                        <span @click="openEye = !openEye" style="position: absolute;right: 2%;top: 30%;">
+                            <x-svg.eye-open-icon xShow="!openEye" />
+                            <x-svg.eye-close-icon xShow="openEye" />
                         </span>
                     </div>
                     @error('password')

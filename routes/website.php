@@ -22,16 +22,16 @@ Route::name('website.')->group(function(){
     // Website Controller
     Route::controller(WebsiteController::class)->group(function(){
         Route::get('/', 'index')->name('index');
-        Route::get('/user/dashboard', 'dashboard')->name('user.dashboard');
+        Route::get('/user/dashboard', 'dashboard')->name('dashboard');
     });
 
     // Student Controller
-    Route::controller(StudentController::class)->middleware('student')->prefix('student')->name('student.')->group(function(){
+    Route::controller(StudentController::class)->middleware(['auth:user','student'])->prefix('student')->name('student.')->group(function(){
         Route::get('/dashboard', 'dashboard')->name('dashboard');
     });
 
     // Instructor Controller
-    Route::controller(InstructorController::class)->middleware('instructor')->prefix('instructor')->name('instructor.')->group(function(){
+    Route::controller(InstructorController::class)->middleware(['auth:user','instructor'])->prefix('instructor')->name('instructor.')->group(function(){
         Route::get('/dashboard', 'dashboard')->name('dashboard');
     });
 });

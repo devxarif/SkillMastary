@@ -37,7 +37,7 @@ class Login extends Component
 
             session()->flash('success', __('Logged in successfully'));
 
-            return to_route('frontend.dashboard');
+            return to_route('website.dashboard');
         }
 
         $this->addError('username', 'The provided credentials do not match our records');

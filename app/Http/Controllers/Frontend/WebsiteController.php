@@ -21,9 +21,9 @@ class WebsiteController extends Controller
     {
         try {
             if (authCheck() && authUser()->role == 'student') {
-                return to_route('student.dashboard');
+                return to_route('website.student.dashboard');
             } elseif (authCheck() && authUser()->role == 'instructor') {
-                return to_route('instructor.dashboard');
+                return to_route('website.instructor.dashboard');
             }
 
             return to_route('website.login');

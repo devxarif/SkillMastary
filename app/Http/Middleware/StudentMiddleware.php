@@ -18,7 +18,7 @@ class StudentMiddleware
         if (authUser()->role == 'student') {
             return $next($request);
         }elseif (authUser()->role == 'instructor') {
-            return redirect()->route('student.dashboard');
+            return redirect()->route('website.student.dashboard');
         }
 
         return to_route('website.login');
