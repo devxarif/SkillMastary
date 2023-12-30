@@ -12,7 +12,7 @@ class Login extends Component
     public $email;
     public $password;
     public $remember;
-    // public $captcha = null;
+    public $captcha = null;
 
     public function render()
     {
@@ -21,15 +21,10 @@ class Login extends Component
 
     public function login()
     {
-        // dd([
-        //     'email' => $this->email,
-        //     'password' => $this->password,
-        //     'remember' => $this->remember,
-        // ]);
         $this->validate([
             'email' => 'required|email',
             'password' => 'required|string',
-            // 'captcha' => config('captcha.active') ? 'required' : '',
+            'captcha' => config('captcha.active') ? 'required' : '',
         ]);
 
         if (Auth::guard('user')->attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
@@ -43,18 +38,14 @@ class Login extends Component
         $this->addError('email', 'The provided credentials do not match our records');
     }
 
-    // public function updatedCaptcha($token)
-    // {
-    //     $response = Http::post(
-    //         'https://www.google.com/recaptcha/api/siteverify?secret=' .
-    //             config('captcha.sitekey') .
-    //             '&response=' . $token
-    //     );
+    public function updatedCaptcha($token)
+    {
+        $response = Http::post('https://www.google.com/recaptcha/api/siteverify?secret=' .config('captcha.sitekey') .'&response=' . $token);
 
-    //     $success = $response->json()['success'];
+        $success = $response->json()['success'];
 
-    //     if ($success) {
-    //         $this->captcha = true;
-    //     }
-    // }
+        if ($success) {
+            $this->captcha = true;
+        }
+    }
 }

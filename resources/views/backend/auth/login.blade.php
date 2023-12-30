@@ -2,6 +2,6 @@
 
 @section('title', __('Login'))
 
-@section('auth-content')
+@section('content')
     @livewire('backend.auth.login')
 @endsection

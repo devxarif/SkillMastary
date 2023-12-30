@@ -21,6 +21,16 @@
                 <span class="invalid-feedback d-block" role="alert"><strong>{{ $message }}</strong></span>
             @enderror
         </div>
+        @if (config('captcha.active'))
+            <div class="mt-3">
+                <div id="captcha" wire:ignore></div>
+                @error('captcha')
+                    <p class="mb-3 text-danger">
+                        {{ $message }}
+                    </p>
+                @enderror
+            </div>
+        @endif
         <button wire:loading.attr="disabled" type="submit" class="btn btn-primary pill btn-icon d-block">
             <span class="button-content-wrapper">
                 <span class="button-icon align-icon-right">

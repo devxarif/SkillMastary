@@ -31,7 +31,7 @@
           <div class="login-thumb">
             <img src="{{ asset('backend') }}/images/all-img/thumb.jpg" alt="" />
           </div>
-          @yield('auth-content')
+          @yield('content')
         </div>
 
         @yield('auth-footer')

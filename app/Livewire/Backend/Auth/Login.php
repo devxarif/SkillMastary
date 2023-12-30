@@ -4,6 +4,7 @@ namespace App\Livewire\Backend\Auth;
 
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Http;
 
 class Login extends Component
 {
@@ -18,15 +19,9 @@ class Login extends Component
 
     public function login()
     {
-        // dd([
-        //     'email' => $this->email,
-        //     'password' => $this->password,
-        //     'remember' => $this->remember,
-        // ]);
         $this->validate([
             'email' => 'required|email',
             'password' => 'required|string',
-            // 'captcha' => config('captcha.active') ? 'required' : '',
         ]);
 
         if (Auth::guard('admin')->attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {

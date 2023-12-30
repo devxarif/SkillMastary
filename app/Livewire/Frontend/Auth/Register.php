@@ -5,6 +5,7 @@ namespace App\Livewire\Frontend\Auth;
 use App\Models\User;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Http;
 
 class Register extends Component
 {
@@ -14,6 +15,7 @@ class Register extends Component
     public $password;
     public $password_confirmation;
     public $type = 'student';
+    public $captcha = null;
 
     public function render()
     {
@@ -27,6 +29,7 @@ class Register extends Component
             'password' => 'required|string|min:8|confirmed',
             'password_confirmation' => 'required|string',
             'type' => 'required|string|in:student,instructor',
+            'captcha' => config('captcha.active') ? 'required' : '',
         ]);
 
         $user = User::create([
@@ -41,5 +44,16 @@ class Register extends Component
         session()->flash('success', __('Registered successfully'));
 
         return to_route('website.dashboard');
+    }
+
+    public function updatedCaptcha($token)
+    {
+        $response = Http::post('https://www.google.com/recaptcha/api/siteverify?secret=' .config('captcha.sitekey') .'&response=' . $token);
+
+        $success = $response->json()['success'];
+
+        if ($success) {
+            $this->captcha = true;
+        }
     }
 }

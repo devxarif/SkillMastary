@@ -37,6 +37,16 @@
                     @enderror
                 </div>
             </div>
+            @if (config('captcha.active'))
+                <div>
+                    <div id="captcha" wire:ignore></div>
+                    @error('captcha')
+                        <p class="mb-3 text-danger">
+                            {{ $message }}
+                        </p>
+                    @enderror
+                </div>
+            @endif
             <div class="form-group  form-group--2 align-items-center my-2 py-2">
                 <div class="form-check">
                     <input wire:model="remember" id="remember_me" class="form-check-input" type="checkbox">
@@ -68,3 +78,23 @@
         </form>
     </div>
 </div>
+
+@push('frontend_scripts')
+    @if (config('captcha.active'))
+        <script src="https://www.google.com/recaptcha/api.js?onload=handle&render=explicit" async defer></script>
+
+        <script>
+            var handle = function(e) {
+                widget = grecaptcha.render('captcha', {
+                    'sitekey': '{{ config('captcha.sitekey') }}',
+                    'theme': 'light', // you could switch between dark and light mode.
+                    'callback': verify
+                });
+
+            }
+            var verify = function(response) {
+                @this.set('captcha', response)
+            }
+        </script>
+    @endif
+@endpush
