@@ -31,4 +31,23 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+        'client_id' => '799453836707-aj9lt08133ea19pqh56ed3b70tq9292c.apps.googleusercontent.com',
+        'client_secret' => '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s',
+        'redirect' => '/auth/google/callback',
+        'active' => true,
+    ],
+
+    'facebook' => [
+        'client_id' => '',
+        'client_secret' =>'',
+        'redirect' => '/auth/facebook/callback',
+        'active' => false
+    ],
+
+    'apple' => [
+        'client_id' => '',
+        'client_secret' => '',
+        'redirect' => ''
+    ],
 ];

@@ -67,14 +67,9 @@
                     </span>
                 </button>
             </div>
-            <div class="form-signup">
-                <h6>{{ __('Sign in with') }}</h6>
-                <div class="form-signup__wrapper">
-                    <a class="social-medaia-box-btn google icon-common" href="#"> Google </a>
-                    <a class="social-medaia-box-btn facebook icon-common" href="#"> Facebook </a>
-                    <a class="social-medaia-box-btn apple icon-common" href="#"> Apple </a>
-                </div>
-            </div>
+
+            {{-- Social Login --}}
+            <x-frontend.social-login />
         </form>
     </div>
 </div>
@@ -90,7 +85,6 @@
                     'theme': 'light', // you could switch between dark and light mode.
                     'callback': verify
                 });
-
             }
             var verify = function(response) {
                 @this.set('captcha', response)

@@ -5,6 +5,7 @@ use App\Http\Controllers\Frontend\AuthController;
 use App\Http\Controllers\Frontend\StudentController;
 use App\Http\Controllers\Frontend\WebsiteController;
 use App\Http\Controllers\Frontend\InstructorController;
+use App\Http\Controllers\Frontend\SocialLoginController;
 
 Route::get('/test', function(){
 
@@ -18,6 +19,12 @@ Route::name('website.')->group(function(){
         Route::get('/login', 'login')->name('login');
         Route::get('/register', 'register')->name('register');
         Route::post('/logout', 'logout')->name('logout');
+    });
+
+    // Social Authentication
+    Route::controller(SocialLoginController::class)->group(function () {
+        Route::get('/auth/{provider}/redirect', 'redirect')->name('social.login');
+        Route::get('/auth/{provider}/callback', 'callback');
     });
 
     // Website Controller
