@@ -24,7 +24,7 @@ class Login extends Component
         //     'remember' => $this->remember,
         // ]);
         $this->validate([
-            'email' => 'required',
+            'email' => 'required|email',
             'password' => 'required|string',
             // 'captcha' => config('captcha.active') ? 'required' : '',
         ]);

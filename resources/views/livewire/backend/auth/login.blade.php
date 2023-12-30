@@ -1,26 +1,33 @@
 <div class="login-content">
-    <h3>Login to your account</h3>
-    <form action="#">
+    <h3>{{ __('Login to your account') }}</h3>
+    <form wire:submit="login">
         <div class="fromGroup rt-mb-16">
-            <label>Email</label>
-            <input class="form-control" type="email" placeholder="Email address" />
+            <label>{{ __('Email address') }}</label>
+            <input wire:model="email" class="form-control @error('email') is-invalid @enderror" type="email" placeholder="{{ __('Email address') }}"/>
+
+            @error('email')
+                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+            @enderror
         </div>
         <div class="fromGroup eye rt-mb-24 forget-password">
-            <label>Password <a href="#">Forget Password</a></label>
+            <label>{{ __('Password') }} <a href="#">{{ __('Forget Password') }}</a></label>
             <div class="form-control-icon">
-                <input id="password-hide_show" class="form-control" type="password" placeholder="password" />
+                <input wire:model="password" id="password-hide_show" class="form-control @error('password') is-invalid @enderror" type="password" placeholder="{{ __('Password') }}" />
                 <div class="has-badge">
                     <i class="ph-eye"></i>
                 </div>
             </div>
+            @error('password')
+                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+            @enderror
         </div>
-        <a class='btn btn-primary pill btn-icon d-block' href='/registration'>
+        <button wire:loading.attr="disabled" type="submit" class="btn btn-primary pill btn-icon d-block">
             <span class="button-content-wrapper">
                 <span class="button-icon align-icon-right">
                     <i class="ph-arrow-right"></i>
                 </span>
-                <span class="button-text">Login Now</span>
+                <span class="button-text">{{ __('Login') }}</span>
             </span>
-        </a>
+        </button>
     </form>
 </div>
