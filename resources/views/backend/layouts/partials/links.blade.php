@@ -20,5 +20,6 @@
 <link rel="stylesheet" href="{{ asset('backend') }}/css/dragula.min.css" />
 <link rel="stylesheet" href="{{ asset('backend') }}/css/animate.min.css" />
 <link rel="stylesheet" href="{{ asset('backend') }}/css/app.min.css" />
+<link rel="stylesheet" href="{{ asset('backend') }}/css/backend_custom.css" />
 
 @stack('backend_styles')

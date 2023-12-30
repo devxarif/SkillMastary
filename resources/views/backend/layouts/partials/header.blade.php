@@ -1,3 +1,7 @@
+@php
+    $auth_user = authUser('admin');
+@endphp
+
 <header class="app-header rt-sticky">
     <div class="navbar align-items-center">
         <div class="container-fluid">
@@ -86,7 +90,7 @@
                         </li>
                         <li>
                             <div class="userProfileBox openaccount pointer">
-                                <img src="{{ asset('backend') }}/images/all-img/user.svg" alt="" />
+                                <img src="{{ $auth_user?->avatar_url }}" alt="avatar" class="rounded avatar" />
                             </div>
                         </li>
                     </ul>
@@ -96,10 +100,6 @@
     </div>
 </header>
 
-
-
-
-
 <div class="rt-mobile-menu-overlay"></div>
 <!-- /.rt-mobile-menu-overlay -->
 <div id="template2" style="display: none">
@@ -108,12 +108,12 @@
             <a class="rt-single-icon-box user-profile-icon-big rt-align-center" href="#">
                 <div class="icon-thumb">
                     <div class="innerImage">
-                        <img src="{{ asset('backend') }}/images/all-img/user.svg" alt="profile_image" />
+                        <img src="{{ $auth_user?->avatar_url }}" alt="profile_image" />
                     </div>
                 </div>
                 <div class="iconbox-content">
-                    <h4>aaa</h4>
-                    <span>farazleo112</span>
+                    <h4>{{ $auth_user?->name }}</h4>
+                    <span>{{ $auth_user?->email }}</span>
                 </div>
             </a>
         </div>
@@ -155,7 +155,7 @@
                 </ul>
             </div>
             <div class="popOverFooter">
-                <a href="#">
+                <a href="javascript:void(0)" onclick="event.preventDefault();document.getElementById('admin-logout-form').submit();" >
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="17.3" height="17.3" viewBox="0 0 17.3 17.3">
                             <g id="log-out" transform="translate(-2.35 -2.35)">
@@ -174,6 +174,10 @@
                     </span>
                     Log Out
                 </a>
+                <form id="admin-logout-form" action="{{ route('admin.logout') }}" method="POST" class="hidden invisible">
+                    @csrf
+                </form>
+
             </div>
         </div>
     </div>

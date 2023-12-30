@@ -16,4 +16,17 @@ class Admin extends Authenticatable
         'email',
         'password',
     ];
+
+    protected $appends = ['avatar_url'];
+
+    public function getAvatarUrlAttribute()
+    {
+        return $this->avatar ? asset($this->avatar) : asset('frontend/images/avatar.png');
+    }
+
+    public function setNameAttribute($value)
+    {
+        $this->attributes['name'] = $value;
+        $this->attributes['username'] = \Str::slug($value);
+    }
 }

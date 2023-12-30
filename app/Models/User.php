@@ -43,4 +43,15 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    /**
+     * The attributes that should be appended.
+     *
+     * @param string $value
+     */
+    public function setNameAttribute($value)
+    {
+        $this->attributes['name'] = $value;
+        $this->attributes['username'] = \Str::slug($value);
+    }
 }

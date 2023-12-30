@@ -19,6 +19,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // if (! app()->runningInConsole()) {
+        //     if (authCheck()) {
+        //         view()->share('authUser', authUser());
+        //     }
+
+        //     view()->share('authAdmin', authUser('admin'));
+        //     if (authCheck('admin')) {
+        //     }
+        // }
     }
 }

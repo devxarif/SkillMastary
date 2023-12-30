@@ -18,7 +18,7 @@
                 </div>
             </div>
             @error('password')
-                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                <span class="invalid-feedback d-block" role="alert"><strong>{{ $message }}</strong></span>
             @enderror
         </div>
         <button wire:loading.attr="disabled" type="submit" class="btn btn-primary pill btn-icon d-block">

@@ -28,7 +28,7 @@
                         </div>
                     @else
                         <div class="header-btn-wrap d-flex align-items-center">
-                            <p>{{ __("Don't have an account") }}</p>
+                            <p>{{ __("Don't have an account ?") }}</p>
                             <a class="button button--md button-p-s" href="{{ route('website.register') }}">{{ __('Create Account') }}</a>
                         </div>
                     @endif
