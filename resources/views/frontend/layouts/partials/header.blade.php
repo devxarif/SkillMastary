@@ -26,11 +26,11 @@
         </form>
     </div>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="course-list.html">Browse Courses</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="become-instructor.html">Become an Instructor</a></li>
+        <li><a href="{{ route('website.index') }}">Home</a></li>
+        <li><a href="{{ route('website.course') }}">Browse Courses</a></li>
+        <li><a href="{{ route('website.about') }}">About</a></li>
+        <li><a href="{{ route('website.contact') }}">Contact</a></li>
+        <li><a href="{{ route('website.become-instructor') }}">Become an Instructor</a></li>
     </ul>
     <h3>ACCOUNTS</h3>
     <ul>
@@ -131,11 +131,11 @@
         </div>
         <div class="main-menu">
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="course-list.html">Courses</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="become-instructor.html">Become an Instructor</a></li>
+                <li><a class="active" href="{{ route('website.index') }}">Home</a></li>
+                <li><a href="{{ route('website.course') }}">Browse Courses</a></li>
+                <li><a href="{{ route('website.about') }}">About</a></li>
+                <li><a href="{{ route('website.contact') }}">Contact</a></li>
+                <li><a href="{{ route('website.become-instructor') }}">Become an Instructor</a></li>
             </ul>
         </div>
         <div class="header-right">

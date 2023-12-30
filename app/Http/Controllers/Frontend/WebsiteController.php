@@ -7,9 +7,50 @@ use Illuminate\Http\Request;
 
 class WebsiteController extends Controller
 {
+    /**
+     * Show the application home page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function index()
     {
         return view('frontend.pages.others.index');
+    }
+
+    /**
+     * Show the application about page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function about(){
+        return view('frontend.pages.others.about');
+    }
+
+    /**
+     * Show the application about page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function contact(){
+        return view('frontend.pages.others.about');
+    }
+
+    /**
+     * Show the application about page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function becomeInstructor(){
+        return view('frontend.pages.others.about');
+    }
+
+    /**
+     * Show the application about page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function course(){
+        return view('frontend.pages.others.about');
     }
 
     /**
