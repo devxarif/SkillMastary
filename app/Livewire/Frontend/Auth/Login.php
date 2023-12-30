@@ -40,7 +40,7 @@ class Login extends Component
             return to_route('website.dashboard');
         }
 
-        $this->addError('username', 'The provided credentials do not match our records');
+        $this->addError('email', 'The provided credentials do not match our records');
     }
 
     // public function updatedCaptcha($token)

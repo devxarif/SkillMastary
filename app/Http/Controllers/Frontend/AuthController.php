@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     public function login(){
         if(authCheck()){
-            return redirect()->route('website.dashboard');
+            return to_route('website.dashboard');
         }
 
         return view('frontend.auth.login');
@@ -22,7 +22,7 @@ class AuthController extends Controller
 
     public function logout(){
         Auth::guard('user')->logout();
-        return redirect()->route('website.login');
+        return to_route('website.login');
     }
 }
 
