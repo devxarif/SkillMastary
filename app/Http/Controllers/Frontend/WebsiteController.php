@@ -32,7 +32,7 @@ class WebsiteController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function contact(){
-        return view('frontend.pages.others.about');
+        return view('frontend.pages.others.contact');
     }
 
     /**
@@ -41,16 +41,25 @@ class WebsiteController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function becomeInstructor(){
-        return view('frontend.pages.others.about');
+        return view('frontend.pages.others.become-instructor');
     }
 
     /**
-     * Show the application about page.
+     * Show the application course page.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function course(){
-        return view('frontend.pages.others.about');
+        return view('frontend.pages.others.course');
+    }
+
+    /**
+     * Show the application course details page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function courseDetails(){
+        return view('frontend.pages.others.course-details');
     }
 
     /**

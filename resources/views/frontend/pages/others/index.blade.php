@@ -1662,7 +1662,7 @@
             </div>
         </div>
         <div class="footer-button text-center mt-3">
-            <a class="button button--lg button-p-s button-i--r" href="course-list.html">Browse all Course
+            <a class="button button--lg button-p-s button-i--r" href="{{ route('website.course') }}">Browse all Course
                 <span>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.75 12H20.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"

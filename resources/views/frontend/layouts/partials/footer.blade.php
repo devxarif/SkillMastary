@@ -7,7 +7,7 @@
                         <h3>Start learning with 67.1k students around the world.</h3>
                         <div class="footer-btn-wrap">
                             <a class="button button--md" href="#">Join the Family</a>
-                            <a class="footer-btn gray-btn" href="course-list.html">Browse all courses</a>
+                            <a class="footer-btn gray-btn" href="{{ route('website.course') }}">Browse all courses</a>
                         </div>
                     </div>
                 </div>

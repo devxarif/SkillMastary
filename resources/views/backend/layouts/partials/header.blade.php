@@ -8,7 +8,7 @@
             <div class="left-content">
                 <div class="logo-segment">
                     <div class="all-logo">
-                        <a href="index.html" class="brand-logo">
+                        <a href="{{ route('website.index') }}" class="brand-logo">
                             <img src="{{ asset('backend') }}/images/logo/logo.svg" alt="" draggable="false"
                                 class="logo-black" />
                             <img src="{{ asset('backend') }}/images/logo/logo-white.svg" alt=""
@@ -18,11 +18,11 @@
                             <img src="{{ asset('backend') }}/images/logo/logo-white.svg" alt=""
                                 draggable="false" class="logo-full-white rt-mr-10" />
                         </a>
-                        <a href="index.html" class="brand-logo white">
+                        <a href="{{ route('website.index') }}" class="brand-logo white">
                             <img src="{{ asset('backend') }}/images/logo/logo-white.svg" alt=""
                                 draggable="false" />
                         </a>
-                        <a href="index.html" class="collapse-in-logo">
+                        <a href="{{ route('website.index') }}" class="collapse-in-logo">
                             <img src="{{ asset('backend') }}/images/logo/logo-icon.svg" alt="" draggable="false"
                                 class="logo-icon-blue" />
                             <img src="{{ asset('backend') }}/images/logo/logo-icon-white.svg" alt=""

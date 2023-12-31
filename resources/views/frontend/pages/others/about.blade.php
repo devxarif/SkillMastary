@@ -3,7 +3,6 @@
 @section('title', __('About'))
 
 @section('content')
-
 <div class="bredadcrumb-section">
     <div class="container">
         <div class="breadcrumb-menu">
@@ -11,7 +10,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">/</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="{{ route('website.about') }}">About</a></li>
             </ul>
         </div>
     </div>

@@ -5,7 +5,7 @@
             <h2 class="register-title">{{ __('Create your account') }}</h2>
             <div class="form-group form-group--">
                 <div class="form-field form-field--">
-                    <label for="fname">{{ __('Account Type') }}</label>
+                    <label>{{ __('Account Type') }}</label>
                     <div class="field-wrapper d-flex gap-2">
                         <div class="w-30">
                             <input wire:model="type" type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked value="student">
@@ -23,9 +23,9 @@
             </div>
             <div class="form-group form-group--">
                 <div class="form-field form-field--">
-                    <label for="fname">{{ __('Full Name') }}</label>
+                    <label for="name">{{ __('Full Name') }}</label>
                     <div class="field-wrapper">
-                        <input wire:model="name" type="text" placeholder="{{ __('Full Name') }}" id="fname" class="@error('name') border-danger @enderror">
+                        <input wire:model="name" type="text" placeholder="{{ __('Full Name') }}" id="name" class="@error('name') border-danger @enderror">
                         <span class="icon icon--success">
                             <img src="{{ asset('frontend') }}/images/svg-icon/checkcircle.svg" alt="success-icon">
                         </span>
