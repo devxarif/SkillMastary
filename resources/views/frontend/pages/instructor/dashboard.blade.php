@@ -1,4 +1,4 @@
-@extends('frontend.layouts.dashboard')
+@extends('frontend.layouts.instructor_dashboard')
 
 @section('title', __('Dashboard'))
 
