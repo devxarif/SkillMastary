@@ -344,9 +344,9 @@
                 <div class="col-sm-6  d-flex justify-content-end">
                     <div class="select-box">
                         <select class="custom-select sources" title="English">
-                            <option>English</option>
-                            <option>Germany</option>
-                            <option>Spanish</option>
+                            @foreach ($all_language as $language)
+                                <option lang="en" value="english" selected>{{ $language->name }}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>

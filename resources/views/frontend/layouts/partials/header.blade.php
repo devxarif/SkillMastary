@@ -142,17 +142,18 @@
             <div class="select-item">
                 <div class="select-box">
                     <select class="custom-select sources" title="USD">
-                        <option>Euro</option>
-                        <option>Pound</option>
+                        @foreach ($all_currency as $currency)
+                            <option value="{{ $currency->code  }}">{{ $currency->code }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>
             <div class="select-item">
                 <div class="select-box">
                     <select class="custom-select sources" title="English">
-                        <option>English</option>
-                        <option>Germany</option>
-                        <option>Spanish</option>
+                        @foreach ($all_language as $language)
+                            <option value="{{ $language->code  }}">{{ $language->name }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>

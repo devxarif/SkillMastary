@@ -23,10 +23,4 @@ class Admin extends Authenticatable
     {
         return $this->avatar ? asset($this->avatar) : asset('frontend/images/avatar.png');
     }
-
-    public function setNameAttribute($value)
-    {
-        $this->attributes['name'] = $value;
-        $this->attributes['username'] = \Str::slug($value);
-    }
 }

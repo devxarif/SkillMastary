@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Currency;
+use App\Models\Language;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,7 +21,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // if (! app()->runningInConsole()) {
+        if (! app()->runningInConsole()) {
+            view()->share('all_language', Language::active()->get());
+            view()->share('all_currency', Currency::active()->get());
+
         //     if (authCheck()) {
         //         view()->share('authUser', authUser());
         //     }
@@ -27,6 +32,6 @@ class AppServiceProvider extends ServiceProvider
         //     view()->share('authAdmin', authUser('admin'));
         //     if (authCheck('admin')) {
         //     }
-        // }
+        }
     }
 }

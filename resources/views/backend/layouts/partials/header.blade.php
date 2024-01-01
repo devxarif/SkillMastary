@@ -65,9 +65,9 @@
                                 <form action="" class="language-picker__form">
                                     <label for="language-picker-select"></label>
                                     <select name="language-picker-select" id="language-picker-select">
-                                        <option lang="en" value="english" selected>English</option>
-                                        <option lang="de" value="deutsch">germany</option>
-                                        <option lang="sp" value="spanish">spanish</option>
+                                        @foreach ($all_language as $language)
+                                            <option lang="en" value="english" selected>{{ $language->name }}</option>
+                                        @endforeach
                                     </select>
                                 </form>
                             </div>
