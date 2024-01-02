@@ -17,11 +17,7 @@
     <!-- Instrcutor Dashboard Layout Start -->
     <div class="instructor">
         <!-- sidbear -->
-        @if ($auth_user->role == 'student')
-            @include('components.frontend.student.sidebar')
-        @elseif ($auth_user->role == 'instructor')
-            @include('components.frontend.instructor.sidebar')
-        @endif
+        @include('components.frontend.instructor.sidebar')
 
         <!-- main content -->
         @yield('content')
