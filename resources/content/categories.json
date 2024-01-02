@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Development",
+        "image": "frontend/images/categories/development.svg"
+    },
+    {
+        "name": "Business",
+        "image": "frontend/images/categories/business.svg"
+    },
+    {
+        "name": "Finance & Accounting",
+        "image": "frontend/images/categories/accounting.svg"
+    },
+    {
+        "name": "IT & Software",
+        "image": "frontend/images/categories/software.svg"
+    },
+    {
+        "name": "Office Productivity",
+        "image": "frontend/images/categories/office.svg"
+    },
+    {
+        "name": "Design",
+        "image": "frontend/images/categories/design.svg"
+    },
+    {
+        "name": "Marketing",
+        "image": "frontend/images/categories/marketing.svg"
+    },
+    {
+        "name": "Lifestyle",
+        "image": "frontend/images/categories/lifestyle.svg"
+    },
+    {
+        "name": "Photography & Video",
+        "image": "frontend/images/categories/photography.svg"
+    },
+    {
+        "name": "Health & Fitness",
+        "image": "frontend/images/categories/health.svg"
+    },
+    {
+        "name": "Music",
+        "image": "frontend/images/categories/music.svg"
+    },
+    {
+        "name": "Teaching & Academics",
+        "image": "frontend/images/categories/teaching.svg"
+    }
+]
