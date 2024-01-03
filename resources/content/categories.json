@@ -3,532 +3,187 @@
         "name": "Development",
         "image": "frontend/images/categories/development.svg",
         "subcategories": [
-            {
-                "name": "Web Development",
-                "image": "frontend/images/categories/web.svg"
-            },
-            {
-                "name": "Mobile Apps",
-                "image": "frontend/images/categories/mobile.svg"
-            },
-            {
-                "name": "Programming Languages",
-                "image": "frontend/images/categories/programming.svg"
-            },
-            {
-                "name": "Game Development",
-                "image": "frontend/images/categories/game.svg"
-            },
-            {
-                "name": "Databases",
-                "image": "frontend/images/categories/database.svg"
-            },
-            {
-                "name": "Software Testing",
-                "image": "frontend/images/categories/testing.svg"
-            },
-            {
-                "name": "Software Engineering",
-                "image": "frontend/images/categories/engineering.svg"
-            },
-            {
-                "name": "Development Tools",
-                "image": "frontend/images/categories/tools.svg"
-            },
-            {
-                "name": "No-Code Development",
-                "image": "frontend/images/categories/nocode.svg"
-            }
+            "Web Development",
+            "Mobile Apps",
+            "Programming Languages",
+            "Game Development",
+            "Databases",
+            "Software Testing",
+            "Software Engineering",
+            "Development Tools",
+            "No-Code Development"
         ]
     },
     {
         "name": "Business",
         "image": "frontend/images/categories/business.svg",
         "subcategories": [
-            {
-                "name": "Entrepreneurship",
-                "image": "frontend/images/categories/entrepreneurship.svg"
-            },
-            {
-                "name": "Communications",
-                "image": "frontend/images/categories/communications.svg"
-            },
-            {
-                "name": "Management",
-                "image": "frontend/images/categories/management.svg"
-            },
-            {
-                "name": "Sales",
-                "image": "frontend/images/categories/sales.svg"
-            },
-            {
-                "name": "Strategy",
-                "image": "frontend/images/categories/strategy.svg"
-            },
-            {
-                "name": "Operations",
-                "image": "frontend/images/categories/operations.svg"
-            },
-            {
-                "name": "Project Management",
-                "image": "frontend/images/categories/project.svg"
-            },
-            {
-                "name": "Business Law",
-                "image": "frontend/images/categories/law.svg"
-            },
-            {
-                "name": "Data & Analytics",
-                "image": "frontend/images/categories/data.svg"
-            },
-            {
-                "name": "Industry",
-                "image": "frontend/images/categories/industry.svg"
-            },
-            {
-                "name": "Human Resources",
-                "image": "frontend/images/categories/human.svg"
-            },
-            {
-                "name": "E-Commerce",
-                "image": "frontend/images/categories/ecommerce.svg"
-            },
-            {
-                "name": "Media",
-                "image": "frontend/images/categories/media.svg"
-            },
-            {
-                "name": "Real Estate",
-                "image": "frontend/images/categories/real.svg"
-            },
-            {
-                "name": "Other",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "Entrepreneurship",
+            "Communications",
+            "Management",
+            "Sales",
+            "Strategy",
+            "Operations",
+            "Project Management",
+            "Business Law",
+            "Data & Analytics",
+            "Industry",
+            "Human Resources",
+            "E-Commerce",
+            "Media",
+            "Real Estate",
+            "Other"
         ]
     },
     {
         "name": "Finance & Accounting",
         "image": "frontend/images/categories/accounting.svg",
         "subcategories": [
-            {
-                "name": "Accounting & Bookkeeping",
-                "image": "frontend/images/categories/accounting.svg"
-            },
-            {
-                "name": "Compliance",
-                "image": "frontend/images/categories/compliance.svg"
-            },
-            {
-                "name": "Cryptocurrency & Blockchain",
-                "image": "frontend/images/categories/cryptocurrency.svg"
-            },
-            {
-                "name": "Economics",
-                "image": "frontend/images/categories/economics.svg"
-            },
-            {
-                "name": "Finance",
-                "image": "frontend/images/categories/finance.svg"
-            },
-            {
-                "name": "Finance Cert & Exam Prep",
-                "image": "frontend/images/categories/finance.svg"
-            },
-            {
-                "name": "Financial Modeling & Analysis",
-                "image": "frontend/images/categories/financial.svg"
-            },
-            {
-                "name": "Investing & Trading",
-                "image": "frontend/images/categories/investing.svg"
-            },
-            {
-                "name": "Money Management Tools",
-                "image": "frontend/images/categories/money.svg"
-            },
-            {
-                "name": "Taxes",
-                "image": "frontend/images/categories/taxes.svg"
-            },
-            {
-                "name": "Other Finance & Economics",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "Accounting & Bookkeeping",
+            "Compliance",
+            "Cryptocurrency & Blockchain",
+            "Economics",
+            "Finance",
+            "Finance Cert & Exam Prep",
+            "Financial Modeling & Analysis",
+            "Investing & Trading",
+            "Money Management Tools",
+            "Taxes",
+            "Other"
         ]
     },
     {
         "name": "IT & Software",
         "image": "frontend/images/categories/software.svg",
         "subcategories": [
-            {
-                "name": "IT Certification",
-                "image": "frontend/images/categories/certification.svg"
-            },
-            {
-                "name": "Network & Security",
-                "image": "frontend/images/categories/network.svg"
-            },
-            {
-                "name": "Hardware",
-                "image": "frontend/images/categories/hardware.svg"
-            },
-            {
-                "name": "Operating Systems",
-                "image": "frontend/images/categories/operating.svg"
-            },
-            {
-                "name": "Other",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "IT Certification",
+            "Network & Security",
+            "Hardware",
+            "Operating Systems",
+            "Other"
         ]
     },
     {
         "name": "Office Productivity",
         "image": "frontend/images/categories/office.svg",
         "subcategories": [
-            {
-                "name": "Microsoft",
-                "image": "frontend/images/categories/microsoft.svg"
-            },
-            {
-                "name": "Apple",
-                "image": "frontend/images/categories/apple.svg"
-            },
-            {
-                "name": "Google",
-                "image": "frontend/images/categories/google.svg"
-            },
-            {
-                "name": "SAP",
-                "image": "frontend/images/categories/sap.svg"
-            },
-            {
-                "name": "Oracle",
-                "image": "frontend/images/categories/oracle.svg"
-            },
-            {
-                "name": "Other",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "Microsoft",
+            "Apple",
+            "Google",
+            "SAP",
+            "Oracle",
+            "Other"
         ]
     },
     {
         "name": "Design",
         "image": "frontend/images/categories/design.svg",
         "subcategories": [
-            {
-                "name": "Web Design",
-                "image": "frontend/images/categories/web.svg"
-            },
-            {
-                "name": "Graphic Design",
-                "image": "frontend/images/categories/graphic.svg"
-            },
-            {
-                "name": "Design Tools",
-                "image": "frontend/images/categories/tools.svg"
-            },
-            {
-                "name": "User Experience",
-                "image": "frontend/images/categories/user.svg"
-            },
-            {
-                "name": "Game Design",
-                "image": "frontend/images/categories/game.svg"
-            },
-            {
-                "name": "Design Thinking",
-                "image": "frontend/images/categories/thinking.svg"
-            },
-            {
-                "name": "3D & Animation",
-                "image": "frontend/images/categories/3d.svg"
-            },
-            {
-                "name": "Fashion",
-                "image": "frontend/images/categories/fashion.svg"
-            },
-            {
-                "name": "Architectural Design",
-                "image": "frontend/images/categories/architectural.svg"
-            },
-            {
-                "name": "Interior Design",
-                "image": "frontend/images/categories/interior.svg"
-            },
-            {
-                "name": "Other",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "Web Design",
+            "Graphic Design",
+            "Design Tools",
+            "User Experience",
+            "Game Design",
+            "Design Thinking",
+            "3D & Animation",
+            "Fashion",
+            "Architectural Design",
+            "Interior Design",
+            "Other"
         ]
     },
     {
         "name": "Marketing",
         "image": "frontend/images/categories/marketing.svg",
         "subcategories": [
-            {
-                "name": "Digital Marketing",
-                "image": "frontend/images/categories/digital.svg"
-            },
-            {
-                "name": "Search Engine Optimization",
-                "image": "frontend/images/categories/search.svg"
-            },
-            {
-                "name": "Social Media Marketing",
-                "image": "frontend/images/categories/social.svg"
-            },
-            {
-                "name": "Branding",
-                "image": "frontend/images/categories/branding.svg"
-            },
-            {
-                "name": "Marketing Fundamentals",
-                "image": "frontend/images/categories/marketing.svg"
-            },
-            {
-                "name": "Analytics & Automation",
-                "image": "frontend/images/categories/analytics.svg"
-            },
-            {
-                "name": "Public Relations",
-                "image": "frontend/images/categories/public.svg"
-            },
-            {
-                "name": "Advertising",
-                "image": "frontend/images/categories/advertising.svg"
-            },
-            {
-                "name": "Video & Mobile Marketing",
-                "image": "frontend/images/categories/video.svg"
-            },
-            {
-                "name": "Content Marketing",
-                "image": "frontend/images/categories/content.svg"
-            },
-            {
-                "name": "Growth Hacking",
-                "image": "frontend/images/categories/growth.svg"
-            },
-            {
-                "name": "Affiliate Marketing",
-                "image": "frontend/images/categories/affiliate.svg"
-            },
-            {
-                "name": "Product Marketing",
-                "image": "frontend/images/categories/product.svg"
-            },
-            {
-                "name": "Other",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "Digital Marketing",
+            "Search Engine Optimization",
+            "Social Media Marketing",
+            "Branding",
+            "Marketing Fundamentals",
+            "Analytics & Automation",
+            "Public Relations",
+            "Advertising",
+            "Video & Mobile Marketing",
+            "Content Marketing",
+            "Growth Hacking",
+            "Affiliate Marketing",
+            "Product Marketing",
+            "Other"
         ]
     },
     {
         "name": "Lifestyle",
         "image": "frontend/images/categories/lifestyle.svg",
         "subcategories": [
-            {
-                "name": "Arts & Crafts",
-                "image": "frontend/images/categories/arts.svg"
-            },
-            {
-                "name": "Food & Beverage",
-                "image": "frontend/images/categories/food.svg"
-            },
-            {
-                "name": "Beauty & Makeup",
-                "image": "frontend/images/categories/beauty.svg"
-            },
-            {
-                "name": "Travel",
-                "image": "frontend/images/categories/travel.svg"
-            },
-            {
-                "name": "Gaming",
-                "image": "frontend/images/categories/gaming.svg"
-            },
-            {
-                "name": "Home Improvement",
-                "image": "frontend/images/categories/home.svg"
-            },
-            {
-                "name": "Pet Care & Training",
-                "image": "frontend/images/categories/pet.svg"
-            },
-            {
-                "name": "Other",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "Arts & Crafts",
+            "Food & Beverage",
+            "Beauty & Makeup",
+            "Travel",
+            "Gaming",
+            "Home Improvement",
+            "Pet Care & Training",
+            "Other"
         ]
     },
     {
         "name": "Photography & Video",
         "image": "frontend/images/categories/photography.svg",
         "subcategories": [
-            {
-                "name": "Digital Photography",
-                "image": "frontend/images/categories/digital.svg"
-            },
-            {
-                "name": "Photography Fundamentals",
-                "image": "frontend/images/categories/photography.svg"
-            },
-            {
-                "name": "Portraits",
-                "image": "frontend/images/categories/portraits.svg"
-            },
-            {
-                "name": "Photography Tools",
-                "image": "frontend/images/categories/tools.svg"
-            },
-            {
-                "name": "Commercial Photography",
-                "image": "frontend/images/categories/commercial.svg"
-            },
-            {
-                "name": "Video Design",
-                "image": "frontend/images/categories/video.svg"
-            },
-            {
-                "name": "Other",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "Digital Photography",
+            "Photography Fundamentals",
+            "Portraits",
+            "Photography Tools",
+            "Commercial Photography",
+            "Video Design",
+            "Other"
         ]
     },
     {
         "name": "Health & Fitness",
         "image": "frontend/images/categories/health.svg",
         "subcategories": [
-            {
-                "name": "Fitness",
-                "image": "frontend/images/categories/fitness.svg"
-            },
-            {
-                "name": "General Health",
-                "image": "frontend/images/categories/health.svg"
-            },
-            {
-                "name": "Sports",
-                "image": "frontend/images/categories/sports.svg"
-            },
-            {
-                "name": "Nutrition",
-                "image": "frontend/images/categories/nutrition.svg"
-            },
-            {
-                "name": "Yoga",
-                "image": "frontend/images/categories/yoga.svg"
-            },
-            {
-                "name": "Mental Health",
-                "image": "frontend/images/categories/mental.svg"
-            },
-            {
-                "name": "Dieting",
-                "image": "frontend/images/categories/dieting.svg"
-            },
-            {
-                "name": "Self Defense",
-                "image": "frontend/images/categories/self.svg"
-            },
-            {
-                "name": "Safety & First Aid",
-                "image": "frontend/images/categories/safety.svg"
-            },
-            {
-                "name": "Dance",
-                "image": "frontend/images/categories/dance.svg"
-            },
-            {
-                "name": "Meditation",
-                "image": "frontend/images/categories/meditation.svg"
-            },
-            {
-                "name": "Other",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "Fitness",
+            "General Health",
+            "Sports",
+            "Nutrition",
+            "Yoga",
+            "Mental Health",
+            "Dieting",
+            "Self Defense",
+            "Safety & First Aid",
+            "Dance",
+            "Meditation",
+            "Other"
         ]
     },
     {
         "name": "Music",
         "image": "frontend/images/categories/music.svg",
         "subcategories": [
-            {
-                "name": "Instruments",
-                "image": "frontend/images/categories/instruments.svg"
-            },
-            {
-                "name": "Production",
-                "image": "frontend/images/categories/production.svg"
-            },
-            {
-                "name": "Music Fundamentals",
-                "image": "frontend/images/categories/music.svg"
-            },
-            {
-                "name": "Vocal",
-                "image": "frontend/images/categories/vocal.svg"
-            },
-            {
-                "name": "Music Techniques",
-                "image": "frontend/images/categories/music.svg"
-            },
-            {
-                "name": "Music Software",
-                "image": "frontend/images/categories/music.svg"
-            },
-            {
-                "name": "Other",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "Instruments",
+            "Production",
+            "Music Fundamentals",
+            "Vocal",
+            "Music Techniques",
+            "Music Software",
+            "Other"
         ]
     },
     {
         "name": "Teaching & Academics",
         "image": "frontend/images/categories/box.svg",
         "subcategories": [
-            {
-                "name": "Engineering",
-                "image": "frontend/images/categories/engineering.svg"
-            },
-            {
-                "name": "Humanities",
-                "image": "frontend/images/categories/humanities.svg"
-            },
-            {
-                "name": "Math",
-                "image": "frontend/images/categories/math.svg"
-            },
-            {
-                "name": "Science",
-                "image": "frontend/images/categories/science.svg"
-            },
-            {
-                "name": "Online Education",
-                "image": "frontend/images/categories/online.svg"
-            },
-            {
-                "name": "Social Science",
-                "image": "frontend/images/categories/social.svg"
-            },
-            {
-                "name": "Language",
-                "image": "frontend/images/categories/language.svg"
-            },
-            {
-                "name": "Teacher Training",
-                "image": "frontend/images/categories/teacher.svg"
-            },
-            {
-                "name": "Test Prep",
-                "image": "frontend/images/categories/test.svg"
-            },
-            {
-                "name": "Other",
-                "image": "frontend/images/categories/other.svg"
-            }
+            "Engineering",
+            "Humanities",
+            "Math",
+            "Science",
+            "Online Education",
+            "Social Science",
+            "Language",
+            "Teacher Training",
+            "Test Prep",
+            "Other"
         ]
     }
 ]

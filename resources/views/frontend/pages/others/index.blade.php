@@ -12,7 +12,7 @@
                     <h1>Learn with expert anytime anywhere</h1>
                     <p>Our mision is to help people to find the best course online and learn with expert anytime,
                         anywhere.</p>
-                    <a class="button button--lg" href="create-account.html">Create Account</a>
+                    <a class="button button--lg" href="{{ route('website.register') }}">Create Account</a>
                 </div>
             </div>
             <div class="col-xl-7 col-lg-6">
@@ -48,7 +48,7 @@
             @endforeach
         </div>
         <div class="icon-bottom-btn mt-4">
-            <p>We have more category & subcategory. <a href="category.html">Browse All
+            <p>We have more category & subcategory. <a href="{{ route('website.course') }}">Browse All
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.75 12H20.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -1379,6 +1379,38 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-xl-6">
+                <div class="cta-right">
+                    <h3>Your teaching & earning steps</h3>
+                    <ul>
+                        <li><span class="color-1">1</span> Apply to become instructor</li>
+                        <li><span class="color-2">2</span> Build & edit your profile</li>
+                        <li><span class="color-3">3</span> Create your new course</li>
+                        <li><span class="color-4">4</span> Start teaching & earning</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="cta-left">
+                    <h4>Become an student</h4>
+                    <p>Instructors from around the world teach millions of students on Udemy. We provide the tools
+                        and skills to teach what you love.</p>
+                    <a class="default-btn btn-large bg-white icon-btn" href="#">Browse all Course
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.75 12H20.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FF6636" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <div class="cat-thumb">
+                        <img src="{{ asset('frontend') }}/images/cta.png" alt="">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

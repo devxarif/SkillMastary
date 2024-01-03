@@ -13,21 +13,6 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        // $categories = [
-        //     "Development",
-        //     "Business",
-        //     "Finance & Accounting",
-        //     "IT & Software",
-        //     "Office Productivity",
-        //     "Personal Development",
-        //     "Design",
-        //     "Marketing",
-        //     "Lifestyle",
-        //     "Photography & Video",
-        //     "Health & Fitness",
-        //     "Music",
-        //     "Teaching & Academics",
-        // ];
         $categories = \File::json(resource_path('content/categories.json'));
 
         foreach ($categories as $category) {
@@ -36,7 +21,11 @@ class CategorySeeder extends Seeder
                 'image' => $category['image'],
             ]);
 
-            $category->subcategories()->createMany($category['subcategories']);
+            foreach ($category['subcategories'] as $subcategory) {
+                $category->subcategories()->create([
+                    'name' => $subcategory
+                ]);
+            }
         }
     }
 }
