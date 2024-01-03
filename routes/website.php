@@ -9,6 +9,9 @@ use App\Http\Controllers\Frontend\SocialLoginController;
 
 Route::get('/test', function(){
 
+    $categories = \File::json(resource_path('content/categories.json'));
+
+    return $categories;
     return App\Enums\UserRoleEnum::ROLE_STUDENT?->value;
     return App\Enums\UserRoleEnum::getValues();
 });

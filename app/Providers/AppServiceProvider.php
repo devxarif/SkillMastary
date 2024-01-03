@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Category;
 use App\Models\Currency;
 use App\Models\Language;
 use Illuminate\Support\ServiceProvider;
@@ -24,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
         if (! app()->runningInConsole()) {
             view()->share('all_language', Language::active()->get());
             view()->share('all_currency', Currency::active()->get());
+            view()->share('all_category', Category::all());
+
 
         //     if (authCheck()) {
         //         view()->share('authUser', authUser());
