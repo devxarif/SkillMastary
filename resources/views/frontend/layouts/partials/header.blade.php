@@ -179,10 +179,10 @@
                 </div>
                 <div class="borwser-dropdown">
                     <div class="select-box">
-                        <select class="custom-select sources" title="Browse">
-                            <option>Mozila</option>
-                            <option>Chrome</option>
-                            <option>Safari</option>
+                        <select class="custom-select sources" title="All Category">
+                            @foreach ($all_category as $category)
+                                <option value="{{ $category->slug }}">{{ $category->name }}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>
