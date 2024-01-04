@@ -8,58 +8,105 @@ use Illuminate\Http\Request;
 class {{ class }} extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display the {{ model }} resource.
+     * @return Illuminate\Contracts\Support\Renderable
      */
     public function index()
     {
-        //
+        $data = (new fetch{{ model }}Service())->execute();
+
+        return view('{{ model }}.index', compact('data'));
     }
 
     /**
      * Show the form for creating a new resource.
+     * @return Illuminate\Contracts\Support\Renderable
      */
     public function create()
     {
-        //
+        return view('{{ model }}.create', compact());
     }
 
     /**
      * Store a newly created resource in storage.
+     *
+     * @param  Illuminate\Http\Request  $request
+     * @return Illuminate\Contracts\Support\Renderable
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $data = (new create{{ model }}Service())->execute();
+
+            flashSuccess("{{ model }} Created Successfully");
+            return back();
+        } catch (\Exception $e) {
+            flashError('An error occurred: '.$e->getMessage());
+            return back();
+        }
     }
 
     /**
      * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return Illuminate\Contracts\Support\Renderable
      */
     public function show($id)
     {
-        //
+        $data = (new show{{ model }}Service())->execute();
+
+        return view('{{ model }}.show', compact('data'));
     }
 
     /**
      * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return Illuminate\Contracts\Support\Renderable
      */
     public function edit($id)
     {
-        //
+        $data = (new edit{{ model }}Service())->execute();
+
+        return view('{{ model }}.edit', compact('data'));
     }
 
     /**
      * Update the specified resource in storage.
+     *
+     * @param  int  $id
+     * @param  Illuminate\Http\Request  $request
      */
     public function update(Request $request, $id)
     {
-        //
+        try {
+            $data = (new create{{ model }}Service())->execute();
+
+            flashSuccess("{{ model }} Created Successfully");
+            return back();
+        } catch (\Exception $e) {
+            flashError('An error occurred: '.$e->getMessage());
+            return back();
+        }
     }
 
     /**
      * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return Illuminate\Contracts\Support\Renderable
      */
     public function destroy($id)
     {
-        //
+        try {
+            $data = (new delete{{ model }}Service())->execute();
+
+            flashSuccess("{{ model }} Deleted Successfully");
+            return back();
+        } catch (\Exception $e) {
+            flashError('An error occurred: '.$e->getMessage());
+            return back();
+        }
     }
 }
