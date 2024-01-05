@@ -11,4 +11,10 @@ class Course extends Model
     use HasFactory, SoftDeletes;
 
     protected $guarded = [];
+
+    public function setTitleAttribute($value)
+    {
+        $this->attributes['title'] = $value;
+        $this->attributes['slug'] = \Str::slug($value);
+    }
 }

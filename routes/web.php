@@ -1,7 +1,20 @@
 <?php
 
+use App\Models\Course;
+use App\Models\User;
+
 require __DIR__.'/website.php';
 require __DIR__.'/admin.php';
+
+
+
+
+// // Instead of this:
+// $course = Course::where('slug', 'my-course')->first();
+// return $user->title; // My Course
+
+// // You can do this:
+// return Course::where('slug', 'my-course')->value('title'); // My Course
 
 
 

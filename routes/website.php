@@ -9,6 +9,7 @@ use App\Http\Controllers\Frontend\SocialLoginController;
 
 Route::get('/test', function(){
 
+    return app('hello_world');
     $categories = \File::json(resource_path('content/categories.json'));
 
     return $categories;

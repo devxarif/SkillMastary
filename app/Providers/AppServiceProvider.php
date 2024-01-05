@@ -22,6 +22,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // $this->app->singleton('hello_world', function () {
+        //     return "Hello World";
+        // });
         if (! app()->runningInConsole()) {
             view()->share('all_language', Language::active()->get());
             view()->share('all_currency', Currency::active()->get());

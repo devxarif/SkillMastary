@@ -14,6 +14,7 @@ class WebsiteController extends Controller
      */
     public function index()
     {
+
         return view('frontend.pages.others.index');
     }
 
