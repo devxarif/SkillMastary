@@ -1,3 +1,5 @@
+/* @import "../../resources/frontend/css/templatecookie.css"; */
+/* @import "../../public/frontend/css/tailwind.css"; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
