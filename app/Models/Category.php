@@ -23,4 +23,14 @@ class Category extends Model
     {
         return $this->hasMany(Subcategory::class);
     }
+
+    public function courses()
+    {
+        return $this->hasMany(Course::class);
+    }
+
+    public function activeCourses()
+    {
+        return $this->hasMany(Course::class);
+    }
 }

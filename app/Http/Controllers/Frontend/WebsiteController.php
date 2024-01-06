@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Services\Frontend\Public\FetchHomePageService;
 
 class WebsiteController extends Controller
 {
@@ -14,8 +15,10 @@ class WebsiteController extends Controller
      */
     public function index()
     {
+        $data = (new FetchHomePageService())->execute();
 
-        return view('frontend.pages.others.index');
+        // return $data;
+        return view('frontend.pages.others.index', $data);
     }
 
     /**

@@ -36,11 +36,13 @@ return new class extends Migration
             $table->float('revenue')->default(0.00);
             $table->enum('status', CourseStatusEnum::getValues())
                 ->default(App\Enums\CourseStatusEnum::DRAFT?->value)
-                ->comment('draft, published, approved, rejected, pending');
+                ->comment('draft, published, rejected, pending');
             $table->string('meta_keywords')->nullable();
             $table->string('meta_description')->nullable();
             $table->boolean('is_featured')->default(false);
             $table->boolean('is_popular')->default(false);
+            $table->timestamp('featured_at')->nullable();
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

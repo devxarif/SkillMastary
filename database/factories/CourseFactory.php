@@ -36,7 +36,7 @@ class CourseFactory extends Factory
             "total_stars" => fake()->randomNumber(),
             "total_reviews" => fake()->randomFloat(2, 0, 999999.99),
             "revenue" => fake()->randomFloat(2, 0, 999999.99),
-            "status" => fake()->randomElement(["draft","published","approved","rejected","pending"]),
+            "status" => fake()->randomElement(["draft","published","rejected","pending", 'published', 'published']),
             "meta_keywords" => fake()->word,
             "meta_description" => fake()->sentence(4),
             "is_featured" => fake()->boolean,

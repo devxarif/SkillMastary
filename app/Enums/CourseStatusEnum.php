@@ -6,7 +6,6 @@ namespace App\Enums;
 enum CourseStatusEnum: string {
     case DRAFT = 'draft';
     case PUBLISHED = 'published';
-    case APPROVED = 'approved';
     case REJECTED = 'rejected';
     case PENDING = 'pending';
 

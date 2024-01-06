@@ -31,16 +31,16 @@
             <h2>Browse with top category</h2>
         </div>
         <div class="row">
-            @foreach ($all_category as $category)
+            @foreach ($categories as $category)
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <a class="d-block" href="category.html">
                         <div class="category-content badge-color-1">
                             <div class="category-content-left">
-                                <img src="{{ asset($category->image) }}" alt="">
+                                <img src="{{ asset($category->image) }}" alt="category_image">
                             </div>
                             <div class="category-content-right">
                                 <h4>{{ $category->name }}</h4>
-                                <span>63,476 Courses</span>
+                                <span>{{ $category->courses_count }} {{ __('Courses') }}</span>
                             </div>
                         </div>
                     </a>
@@ -347,7 +347,7 @@
     <div class="container">
         <div class="feature-course-wrap">
             <div class="section-title section-title2">
-                <h2>Our feature courses</h2>
+                <h2>Our featured courses</h2>
                 <p>Vestibulum sed dolor sed diam mollis maximus vel nec dolor.<br /> Donec varius purus et eleifend
                     porta.</p>
             </div>
