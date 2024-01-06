@@ -131,12 +131,12 @@
             </div>
             <div class="lecture-slider owl-carousel">
                 <div class="course-lecture-watched">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course4.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
-                        <a href="single-course.html" class="title-link-no">1. Intorductions</a>
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">1. Intorductions</a>
                     </div>
                     <div class="course-lecture-footer">
                         <a href="course-watch.html" class="lecture-card-btn lecture-card-btn-watched">Watch
@@ -144,12 +144,12 @@
                     </div>
                 </div>
                 <div class="course-lecture">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/slider1.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -159,12 +159,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture-watched">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/slider2.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Copywriting - Become a Freelance Copywriter...</div>
-                        <a href="single-course.html" class="title-link-no">1. How to get started with
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">1. How to get started with
                             figma</a>
                     </div>
                     <div class="course-lecture-footer">
@@ -173,12 +173,12 @@
                     </div>
                 </div>
                 <div class="course-lecture">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/slider3.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">2021 Complete Python Bootcamp From Zero to</div>
-                        <a href="single-course.html" class="title-link-no">9. Advanced CSS - Selector
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">9. Advanced CSS - Selector
                             Priority</a>
                     </div>
                     <div class="course-lecture-footer">
@@ -188,12 +188,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture-watched">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course4.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
-                        <a href="single-course.html" class="title-link-no">1. Intorductions</a>
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">1. Intorductions</a>
                     </div>
                     <div class="course-lecture-footer">
                         <a href="course-watch.html" class="lecture-card-btn lecture-card-btn-watched">Watch
@@ -201,12 +201,12 @@
                     </div>
                 </div>
                 <div class="course-lecture">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/slider1.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -216,12 +216,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture-watched">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/slider2.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Copywriting - Become a Freelance Copywriter...</div>
-                        <a href="single-course.html" class="title-link-no">1. How to get started with
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">1. How to get started with
                             figma</a>
                     </div>
                     <div class="course-lecture-footer">
@@ -230,12 +230,12 @@
                     </div>
                 </div>
                 <div class="course-lecture">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/slider3.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">2021 Complete Python Bootcamp From Zero to</div>
-                        <a href="single-course.html" class="title-link-no">9. Advanced CSS - Selector
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">9. Advanced CSS - Selector
                             Priority</a>
                     </div>
                     <div class="course-lecture-footer">
@@ -302,12 +302,12 @@
         <div class="lecture-section section-padding-bottom">
             <div class="course-student-column">
                 <div class="course-lecture-watched course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course4.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
-                        <a href="single-course.html" class="title-link-no">1. Intorductions</a>
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">1. Intorductions</a>
                     </div>
                     <div class="course-lecture-footer">
                         <a href="course-watch.html" class="lecture-card-btn lecture-card-btn-watched">Watch
@@ -315,12 +315,12 @@
                     </div>
                 </div>
                 <div class="course-lecture course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course11.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -330,12 +330,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture-watched course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course12.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Copywriting - Become a Freelance Copywriter...</div>
-                        <a href="single-course.html" class="title-link-no">1. How to get started with
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">1. How to get started with
                             figma</a>
                     </div>
                     <div class="course-lecture-footer">
@@ -344,12 +344,12 @@
                     </div>
                 </div>
                 <div class="course-lecture course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course13.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">2021 Complete Python Bootcamp From Zero to</div>
-                        <a href="single-course.html" class="title-link-no">9. Advanced CSS - Selector
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">9. Advanced CSS - Selector
                             Priority</a>
                     </div>
                     <div class="course-lecture-footer">
@@ -359,12 +359,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course1.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -374,12 +374,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course2.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -389,12 +389,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture-watched course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course4.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
-                        <a href="single-course.html" class="title-link-no">1. Intorductions</a>
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">1. Intorductions</a>
                     </div>
                     <div class="course-lecture-footer">
                         <a href="course-watch.html" class="lecture-card-btn lecture-card-btn-watched">Watch
@@ -402,12 +402,12 @@
                     </div>
                 </div>
                 <div class="course-lecture course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course3.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -418,12 +418,12 @@
                 </div>
 
                 <div class="course-lecture-watched course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course5.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
-                        <a href="single-course.html" class="title-link-no">1. Intorductions</a>
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">1. Intorductions</a>
                     </div>
                     <div class="course-lecture-footer">
                         <a href="course-watch.html" class="lecture-card-btn lecture-card-btn-watched">Watch
@@ -431,12 +431,12 @@
                     </div>
                 </div>
                 <div class="course-lecture-watched course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course6.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
-                        <a href="single-course.html" class="title-link-no">1. Intorductions</a>
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">1. Intorductions</a>
                     </div>
                     <div class="course-lecture-footer">
                         <a href="course-watch.html" class="lecture-card-btn lecture-card-btn-watched">Watch
@@ -444,12 +444,12 @@
                     </div>
                 </div>
                 <div class="course-lecture course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course7.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -459,12 +459,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course8.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -474,12 +474,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course9.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -489,12 +489,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course10.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -504,12 +504,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course11.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
-                        <a href="single-course.html" class="title-link-no">The Complete 2021 Web Development
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">The Complete 2021 Web Development
                         </a>
                     </div>
                     <div class="course-lecture-footer">
@@ -519,12 +519,12 @@
                     <div class="red-border"></div>
                 </div>
                 <div class="course-lecture-watched course-column4">
-                    <a href="single-course.html" class="course-lecture-img">
+                    <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
                         <img src="assets/images/course12.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
-                        <a href="single-course.html" class="title-link-no">1. Intorductions</a>
+                        <a href="{{ route('website.course.details', '123') }}" class="title-link-no">1. Intorductions</a>
                     </div>
                     <div class="course-lecture-footer">
                         <a href="course-watch.html" class="lecture-card-btn lecture-card-btn-watched">Watch
@@ -1552,7 +1552,7 @@
                     <div class="faq-review-wrap">
                         <div class="faq-review-item">
                             <div class="faq-review-item-content">
-                                <a class="faq-review-thumb" href="single-course.html"> <img
+                                <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"> <img
                                         src="assets/images/faq-thumb1.png" alt="" /></a>
                                 <div class="faq-review-data">
                                     <div class="faq-review-data-inner">
@@ -1566,7 +1566,7 @@
                                                 </svg>
                                                 4.7 <span> (451,444 Review)</span>
                                             </h5>
-                                            <a href="single-course.html">The Python Mega Course: Build 10
+                                            <a href="{{ route('website.course.details', '123') }}">The Python Mega Course: Build 10
                                                 Real World Applications</a>
                                         </div>
                                         <div class="faq-review-data-bottom">
@@ -1596,7 +1596,7 @@
                         </div>
                         <div class="faq-review-item">
                             <div class="faq-review-item-content">
-                                <a class="faq-review-thumb" href="single-course.html"> <img
+                                <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"> <img
                                         src="assets/images/team2.png" alt="" /></a>
                                 <div class="faq-review-data">
                                     <div class="faq-review-data-inner">
@@ -1610,7 +1610,7 @@
                                                 </svg>
                                                 4.7 <span> (451,444 Review)</span>
                                             </h5>
-                                            <a href="single-course.html">The Python Mega Course: Build 10
+                                            <a href="{{ route('website.course.details', '123') }}">The Python Mega Course: Build 10
                                                 Real World Applications</a>
                                         </div>
                                         <div class="faq-review-data-bottom">
@@ -1642,7 +1642,7 @@
                         </div>
                         <div class="faq-review-item">
                             <div class="faq-review-item-content">
-                                <a class="faq-review-thumb" href="single-course.html"> <img
+                                <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"> <img
                                         src="assets/images/team1.png" alt="" /></a>
                                 <div class="faq-review-data">
                                     <div class="faq-review-data-inner">
@@ -1656,7 +1656,7 @@
                                                 </svg>
                                                 4.7 <span> (451,444 Review)</span>
                                             </h5>
-                                            <a href="single-course.html">The Python Mega Course: Build 10
+                                            <a href="{{ route('website.course.details', '123') }}">The Python Mega Course: Build 10
                                                 Real World Applications</a>
                                         </div>
                                         <div class="faq-review-data-bottom">
@@ -1764,7 +1764,7 @@
                                 <div class="col-xl-6 col-lg-7">
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -1777,7 +1777,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Learn Ethical Hacking From Scratch</h4>
                                                     </a>
                                                 </div>
@@ -1790,7 +1790,7 @@
                                             </div>
                                         </div>
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -1803,7 +1803,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Mega Digital Marketing Course A-Z: 12 Courses in
                                                             1 + Updates</h4>
                                                     </a>
@@ -1953,7 +1953,7 @@
                                 <div class="col-xl-6 col-lg-7">
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -1966,7 +1966,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Learn Ethical Hacking From Scratch</h4>
                                                     </a>
                                                 </div>
@@ -1979,7 +1979,7 @@
                                             </div>
                                         </div>
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -1992,7 +1992,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Mega Digital Marketing Course A-Z: 12 Courses in
                                                             1 + Updates</h4>
                                                     </a>
@@ -2142,7 +2142,7 @@
                                 <div class="col-xl-6 col-lg-7">
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -2155,7 +2155,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Learn Ethical Hacking From Scratch</h4>
                                                     </a>
                                                 </div>
@@ -2168,7 +2168,7 @@
                                             </div>
                                         </div>
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -2181,7 +2181,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Mega Digital Marketing Course A-Z: 12 Courses in
                                                             1 + Updates</h4>
                                                     </a>
@@ -2331,7 +2331,7 @@
                                 <div class="col-xl-6 col-lg-7">
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -2344,7 +2344,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Learn Ethical Hacking From Scratch</h4>
                                                     </a>
                                                 </div>
@@ -2357,7 +2357,7 @@
                                             </div>
                                         </div>
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -2370,7 +2370,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Mega Digital Marketing Course A-Z: 12 Courses in
                                                             1 + Updates</h4>
                                                     </a>
@@ -2520,7 +2520,7 @@
                                 <div class="col-xl-6 col-lg-7">
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -2533,7 +2533,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Learn Ethical Hacking From Scratch</h4>
                                                     </a>
                                                 </div>
@@ -2546,7 +2546,7 @@
                                             </div>
                                         </div>
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -2559,7 +2559,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Mega Digital Marketing Course A-Z: 12 Courses in
                                                             1 + Updates</h4>
                                                     </a>
@@ -2709,7 +2709,7 @@
                                 <div class="col-xl-6 col-lg-7">
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -2722,7 +2722,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Learn Ethical Hacking From Scratch</h4>
                                                     </a>
                                                 </div>
@@ -2735,7 +2735,7 @@
                                             </div>
                                         </div>
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -2748,7 +2748,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Mega Digital Marketing Course A-Z: 12 Courses in
                                                             1 + Updates</h4>
                                                     </a>
@@ -2898,7 +2898,7 @@
                                 <div class="col-xl-6 col-lg-7">
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -2911,7 +2911,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Learn Ethical Hacking From Scratch</h4>
                                                     </a>
                                                 </div>
@@ -2924,7 +2924,7 @@
                                             </div>
                                         </div>
                                         <div class="faq-review-item">
-                                            <a class="faq-review-thumb" href="single-course.html"><img
+                                            <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
                                                     src="assets/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
@@ -2937,7 +2937,7 @@
                                                         </svg>
                                                         4.7 <span> (451,444 Review)</span>
                                                     </h5>
-                                                    <a href="single-course.html">
+                                                    <a href="{{ route('website.course.details', '123') }}">
                                                         <h4>Mega Digital Marketing Course A-Z: 12 Courses in
                                                             1 + Updates</h4>
                                                     </a>

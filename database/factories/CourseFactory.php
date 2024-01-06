@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\Category;
 use App\Models\CourseLevel;
 use App\Models\Subcategory;
+use Illuminate\Support\Arr;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,18 +21,24 @@ class CourseFactory extends Factory
      */
     public function definition(): array
     {
+        $price = fake()->randomFloat(2, 0, 999999.99);
+        $discountPrice = fake()->randomFloat(2, 0, $price);
+
         return [
             "uuid" => fake()->uuid,
             "category_id" => Category::inRandomOrder()->value("id"),
             "subcategory_id" => Subcategory::inRandomOrder()->value("id"),
-            "user_id" => User::inRandomOrder()->value("id"),
+            "user_id" => User::instructor()->inRandomOrder()->value("id"),
             'course_level_id' => CourseLevel::inRandomOrder()->value("id"),
-            "title" => fake()->sentence(1),
+            "title" => fake()->name,
             "description" => fake()->sentence(4),
             "thumbnail" => fake()->imageUrl(),
             "video" => fake()->imageUrl(),
-            "price" => fake()->randomFloat(2, 0, 999999.99),
-            "discount_price" => fake()->randomFloat(2, 0, 999999.99),
+            "price" => $price,
+            "discount_price" => $discountPrice,
+            "usd_price" => fake()->randomFloat(2, 0, 999999.99),
+            "usd_discount_price" => fake()->randomFloat(2, 0, 999999.99),
+            "duration" => Arr::random(['6 hour', '12 hour', '18 hour', '24 hour']),
             "total_enrolled" => fake()->randomNumber(),
             "total_stars" => fake()->randomNumber(),
             "total_reviews" => fake()->randomFloat(2, 0, 999999.99),
@@ -41,7 +48,8 @@ class CourseFactory extends Factory
             "meta_description" => fake()->sentence(4),
             "is_featured" => fake()->boolean,
             "is_popular" => fake()->boolean,
-
+            "featured_at" => fake()->dateTime,
+            "published_at" => fake()->dateTime,
         ];
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+use Carbon\Carbon;
+
 /*
 |--------------------------------------------------------------------------
 | Authentication Helpers
@@ -95,6 +97,40 @@ if (! function_exists('flashWarning')) {
 |--------------------------------------------------------------------------
 */
 
+
+
+/*
+|--------------------------------------------------------------------------
+| Format Helpers
+|--------------------------------------------------------------------------
+*/
+if (! function_exists('formatDate')) {
+    function formatDate($date, $format = 'Y-m-d')
+    {
+        return Carbon::parse($date)->format($format);
+    }
+}
+
+if (! function_exists('formatDateTime')) {
+    function formatDateTime($date, $format = 'Y-m-d')
+    {
+        if ($date) {
+            return Carbon::createFromFormat($format, $date);
+        }
+
+        return null;
+    }
+}
+
+function formatNumber($n)
+{
+    if (!$n || !is_numeric($n) || $n < 1000) return $n;
+
+    $suffix = ['','k','M','G','T','P','E','Z','Y'];
+    $power = floor(log($n, 1000));
+
+    return round($n/(1000**$power),1,PHP_ROUND_HALF_EVEN).$suffix[$power];
+};
 
 
 

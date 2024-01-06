@@ -1057,13 +1057,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course1.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag">Design</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Python Mega Course:
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Python Mega Course:
                                     Build 10 Real World Applications</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1083,13 +1083,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course2.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Developments</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">Facebook Ads & Facebook
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Facebook Ads & Facebook
                                     Marketing MASTERY 2021 Cours...</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1109,13 +1109,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course3.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color3">Business</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">2021 Complete Python
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">2021 Complete Python
                                     Bootcamp From Zero to Hero in Python</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1135,13 +1135,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course4.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Marketing</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Complete Digital
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Complete Digital
                                     Marketing Course - 12 Courses in 1</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1161,13 +1161,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course1.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag">Design</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Python Mega Course:
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Python Mega Course:
                                     Build 10 Real World Applications</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1187,13 +1187,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course2.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Developments</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">Facebook Ads & Facebook
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Facebook Ads & Facebook
                                     Marketing MASTERY 2021 Cours...</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1213,13 +1213,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course3.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color3">Business</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">2021 Complete Python
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">2021 Complete Python
                                     Bootcamp From Zero to Hero in Python</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1239,13 +1239,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course4.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Marketing</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Complete Digital
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Complete Digital
                                     Marketing Course - 12 Courses in 1</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1265,13 +1265,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course1.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag">Design</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Python Mega Course:
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Python Mega Course:
                                     Build 10 Real World Applications</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1291,13 +1291,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course2.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Developments</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">Facebook Ads & Facebook
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Facebook Ads & Facebook
                                     Marketing MASTERY 2021 Cours...</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1317,13 +1317,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course3.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color3">Business</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">2021 Complete Python
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">2021 Complete Python
                                     Bootcamp From Zero to Hero in Python</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1343,13 +1343,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course4.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Marketing</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Complete Digital
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Complete Digital
                                     Marketing Course - 12 Courses in 1</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1369,13 +1369,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course1.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag">Design</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Python Mega Course:
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Python Mega Course:
                                     Build 10 Real World Applications</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1395,13 +1395,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course2.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Developments</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">Facebook Ads & Facebook
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Facebook Ads & Facebook
                                     Marketing MASTERY 2021 Cours...</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1421,13 +1421,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course3.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color3">Business</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">2021 Complete Python
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">2021 Complete Python
                                     Bootcamp From Zero to Hero in Python</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1447,13 +1447,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course4.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Marketing</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Complete Digital
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Complete Digital
                                     Marketing Course - 12 Courses in 1</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1473,13 +1473,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course1.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag">Design</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Python Mega Course:
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Python Mega Course:
                                     Build 10 Real World Applications</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1499,13 +1499,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course2.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Developments</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">Facebook Ads & Facebook
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Facebook Ads & Facebook
                                     Marketing MASTERY 2021 Cours...</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1525,13 +1525,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course3.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color3">Business</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">2021 Complete Python
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">2021 Complete Python
                                     Bootcamp From Zero to Hero in Python</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1551,13 +1551,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course4.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Marketing</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Complete Digital
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Complete Digital
                                     Marketing Course - 12 Courses in 1</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1577,13 +1577,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course1.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag">Design</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Python Mega Course:
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Python Mega Course:
                                     Build 10 Real World Applications</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1603,13 +1603,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course2.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Developments</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">Facebook Ads & Facebook
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Facebook Ads & Facebook
                                     Marketing MASTERY 2021 Cours...</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1629,13 +1629,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course3.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color3">Business</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">2021 Complete Python
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">2021 Complete Python
                                     Bootcamp From Zero to Hero in Python</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">
@@ -1655,13 +1655,13 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="course-item-4">
                             <div class="course-item-5-card">
-                                <a href="single-course.html" class="course-item-5-card-img"><img
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img"><img
                                         src="{{ asset('frontend') }}/images/course4.jpg" alt="" /></a>
                                 <div class="course-item-5-card-info">
                                     <button class="course-item-5-card-info-tag tag-color2">Marketing</button>
                                     <p class="course-item-5-card-info-price">$57</p>
                                 </div>
-                                <a href="single-course.html" class="course-item-5-card-head">The Complete Digital
+                                <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Complete Digital
                                     Marketing Course - 12 Courses in 1</a>
                                 <div class="course-item-5-card-footer">
                                     <p class="course-item-5-card-footer-review align-self-center">

@@ -4433,18 +4433,6 @@ letter-spacing: -0.01em;
 color: #8c94a3;
 }
 
-button.course-item-5-card-info-tag.tag-color2
-{
-color: #342f98;
-background-color: #ebebff;
-}
-
-button.course-item-5-card-info-tag.tag-color3
-{
-color: #15711f;
-background: #e1f7e3;
-}
-
 .course-item-5-grid
 {
 display: flex;
@@ -4723,6 +4711,18 @@ color: #1d2026;
 padding: 10px 0 17px 0;
 margin: 0;
 transition: 0.3s;
+}
+
+.tag-color2
+{
+color: #342f98;
+background-color: #ebebff;
+}
+
+.tag-color3
+{
+color: #15711f;
+background: #e1f7e3;
 }
 
 .tag-color4

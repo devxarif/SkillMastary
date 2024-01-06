@@ -11,9 +11,12 @@ class FetchHomePageService
     {
         $categories = $this->fetchTopCategories();
         $featuredCourses = $this->fetchFeaturedCourses();
+        $latestCourses = $this->fetchLatestCourses();
 
         return [
             'categories' => $categories,
+            'featuredCourses' => $featuredCourses,
+            'latestCourses' => $latestCourses,
         ];
     }
 
@@ -30,11 +33,20 @@ class FetchHomePageService
 
     private function fetchFeaturedCourses()
     {
-        return Course::with(['user', 'category', 'subcategory', 'courseLevel'])
-            ->where('is_featured', true)
-            ->where('status', 'published')
-            ->latest()
-            ->take(12)
+        return Course::with(['user:id,name,avatar', 'category:id,name,slug', 'courseLevel:id,name'])
+            ->published()
+            ->featured()
+            ->latest('featured_at')
+            ->take(10)
+            ->get();
+    }
+
+    private function fetchLatestCourses()
+    {
+        return Course::with(['user:id,name,avatar', 'category:id,name,slug'])
+            ->published()
+            ->latest('published_at')
+            ->take(8)
             ->get();
     }
 }

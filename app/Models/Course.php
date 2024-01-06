@@ -16,15 +16,46 @@ class Course extends Model
 
     protected $guarded = [];
 
+    protected $casts = [
+        'featured_at' => 'datetime',
+        'published_at' => 'datetime',
+    ];
+
+    protected $appends = ['thumbnail_url', 'avg_rating'];
+
     public function scopePublished($query)
     {
-        return $query->where('status', );
+        return $query->where('status', 'published')->whereNotNull('published_at');
+    }
+
+    public function scopePopular($query)
+    {
+        return $query->where('is_popular', true);
+    }
+
+    public function scopeFeatured($query)
+    {
+        return $query->where('is_featured', true)->whereNotNull('featured_at');
     }
 
     public function setTitleAttribute($value)
     {
         $this->attributes['title'] = $value;
         $this->attributes['slug'] = \Str::slug($value);
+    }
+
+    public function getThumbnailUrlAttribute()
+    {
+        return $this->thumbnail ? asset($this->thumbnail) : asset('frontend/images/default.webp');
+    }
+
+    public function getAvgRatingAttribute()
+    {
+        if ($this->total_reviews > 0 && $this->total_stars > 0) {
+            return $this->total_reviews > 0 ? round($this->total_stars / $this->total_reviews, 1) : 0;
+        }
+
+        return 0;
     }
 
     public function category()

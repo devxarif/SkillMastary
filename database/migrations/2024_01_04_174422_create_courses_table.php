@@ -28,8 +28,12 @@ return new class extends Migration
             $table->mediumText('description')->nullable();
             $table->string('thumbnail')->nullable();
             $table->string('video')->nullable();
+            $table->string('currency')->default('USD');
             $table->decimal('price')->default(0.00);
             $table->decimal('discount_price')->default(0.00);
+            $table->decimal('usd_price')->default(0.00);
+            $table->decimal('usd_discount_price')->default(0.00);
+            $table->string('duration')->nullable();
             $table->integer('total_enrolled')->default(0);
             $table->integer('total_stars')->default(0);
             $table->float('total_reviews')->default(0.00);
@@ -39,8 +43,8 @@ return new class extends Migration
                 ->comment('draft, published, rejected, pending');
             $table->string('meta_keywords')->nullable();
             $table->string('meta_description')->nullable();
-            $table->boolean('is_featured')->default(false);
-            $table->boolean('is_popular')->default(false);
+            $table->boolean('is_featured')->default(false)->comment('badge: featured courses');
+            $table->boolean('is_popular')->default(false)->comment('badge: popular courses');
             $table->timestamp('featured_at')->nullable();
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
