@@ -6,8 +6,26 @@ use App\Http\Controllers\Frontend\StudentController;
 use App\Http\Controllers\Frontend\WebsiteController;
 use App\Http\Controllers\Frontend\InstructorController;
 use App\Http\Controllers\Frontend\SocialLoginController;
+use App\Models\Course;
+use App\Models\CourseWishlist;
+use App\Models\User;
 
 Route::get('/test', function(){
+    $course = Course::find(44);
+    $user = authUser();
+    $alreadyWishlist = CourseWishlist::where('user_id', $user->id)->where('course_id', $course->id)->first();
+
+    if ($alreadyWishlist) {
+        $alreadyWishlist->delete();
+    }else{
+        CourseWishlist::create([
+            'user_id' => $user->id,
+            'course_id' => $course->id,
+        ]);
+    }
+
+    return CourseWishlist::where('user_id', $user->id)->get();
+
 
     return app('hello_world');
     $categories = \File::json(resource_path('content/categories.json'));

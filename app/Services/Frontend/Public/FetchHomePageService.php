@@ -46,7 +46,21 @@ class FetchHomePageService
         return Course::with(['user:id,name,avatar', 'category:id,name,slug'])
             ->published()
             ->latest('published_at')
+            ->withCount(['wishlists as wishlisted' => function ($q) {
+                    $q->where('user_id', authCheck() ? auth('user')->id() : '');
+                },
+            ])
             ->take(8)
             ->get();
+
+
+            // $featured_jobs_query = Job::query()->withoutEdited()->with('company.user', 'job_type:id,name', 'category')->withCount([
+            //     'bookmarkJobs', 'appliedJobs',
+            //     'bookmarkJobs as bookmarked' => function ($q) {
+            //         $q->where('candidate_id', auth('user')->check() && currentCandidate() ? currentCandidate()->id : '');
+            //     }, 'appliedJobs as applied' => function ($q) {
+            //         $q->where('candidate_id', auth('user')->check() && currentCandidate() ? currentCandidate()->id : '');
+            //     },
+            // ]);
     }
 }

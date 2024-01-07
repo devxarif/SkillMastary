@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Title & Meta -->
+    <!-- Title, Favicon & Meta -->
     @include('frontend.layouts.partials.title_meta')
 
     <!-- Links -->

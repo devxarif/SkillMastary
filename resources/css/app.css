@@ -1,5 +1,3 @@
-/* @import "../../resources/frontend/css/templatecookie.css"; */
-/* @import "../../public/frontend/css/tailwind.css"; */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "../../public/frontend/css/rt-plugins.css";
+@import "../../public/frontend/css/main.css";
+@import "../../public/frontend/css/tailwind.css";

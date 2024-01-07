@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\Category;
 use App\Models\CourseLevel;
 use App\Models\Subcategory;
+use App\Models\CourseWishlist;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -17,6 +18,7 @@ class Course extends Model
     protected $guarded = [];
 
     protected $casts = [
+        'wishlisted' => 'boolean',
         'featured_at' => 'datetime',
         'published_at' => 'datetime',
     ];
@@ -76,6 +78,11 @@ class Course extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function wishlists()
+    {
+        return $this->hasMany(CourseWishlist::class);
     }
 
 
