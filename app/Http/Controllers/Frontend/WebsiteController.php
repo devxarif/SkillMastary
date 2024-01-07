@@ -17,6 +17,17 @@ class WebsiteController extends Controller
     {
         $data = (new FetchHomePageService())->execute();
 
+        // $options = [
+        //     'positionClass' => 'toast-top-right',
+        //     'progressBar' => true,
+        //     'showDuration' => 100,
+        //     'hideDuration' => 1000,
+        //     'timeOut' => 5000,
+        // ];
+
+        // $login = route('website.login');
+        // $message = "Please login to add this course to your wishlist. <br> <a class='text-decoration-underline fw-bold' href='{$login}'>Login Now</a>";
+        // toastr()->success($message, 'Success', $options);
         // return $data;
         return view('frontend.pages.others.index', $data);
     }

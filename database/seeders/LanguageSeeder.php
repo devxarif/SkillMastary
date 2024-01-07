@@ -21,13 +21,13 @@ class LanguageSeeder extends Seeder
                 'created_at' => now(),
             ],
             [
-                'name' => 'Arabic',
+                'name' => 'عربي',
                 'code' => 'ar',
                 'direction' => 'rtl',
                 'created_at' => now(),
             ],
             [
-                'name' => 'French',
+                'name' => 'Français',
                 'code' => 'fr',
                 'direction' => 'ltr',
                 'created_at' => now(),

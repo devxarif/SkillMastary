@@ -69,8 +69,14 @@ if (! function_exists('flashSuccess')) {
  * @return \Illuminate\Http\Response
  */
 if (! function_exists('flashError')) {
-    function flashError(string $message = 'Something went wrong')
+    function flashError(string $message = 'Something went wrong', $login = false)
     {
+        if ($login) {
+            $login_route = route('website.login');
+            $login_msg = "<br> <a class='text-decoration-underline fw-bold' href='{$login_route}'>Login Now</a>";
+            $message .= $login_msg;
+        }
+
         return toastr()->error($message, 'Error');
     }
 }

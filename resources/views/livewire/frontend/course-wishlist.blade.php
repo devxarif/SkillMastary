@@ -18,22 +18,29 @@ new class extends Component {
 
     public function wishlist()
     {
+        if (!authUser()) {
+            flashError("Please login to add this course to your wishlist.", true);
+
+            return ;
+        }
+
         if (!$this->loading) {
             $this->loading = true;
             $this->wishlisted = !$this->wishlisted;
 
-            if (authCheck()) {
-                $user = authUser();
-                $alreadyWishlist = CourseWishlist::where('user_id', $user->id)->where('course_id', $this->course->id)->first();
+            $user = authUser();
+            $alreadyWishlist = CourseWishlist::where('user_id', $user->id)->where('course_id', $this->course->id)->first();
 
-                if ($alreadyWishlist) {
-                    $alreadyWishlist->delete();
-                }else{
-                    CourseWishlist::create([
-                        'user_id' => $user->id,
-                        'course_id' => $this->course->id,
-                    ]);
-                }
+            if ($alreadyWishlist) {
+                $alreadyWishlist->delete();
+                flashSuccess("Course removed from your wishlist");
+            }else{
+                CourseWishlist::create([
+                    'user_id' => $user->id,
+                    'course_id' => $this->course->id,
+                ]);
+
+                flashSuccess("Course added to your wishlist");
             }
 
             $this->loading = false;
