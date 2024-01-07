@@ -4005,7 +4005,8 @@ background-color: #ffeee8;
 padding: 8px 12px;
 }
 
-.course-hover-detalis .price-discount .heart-icon
+.course-hover-detalis .price-discount .heart-icon,
+.heart-icon-part
 {
 width: 48px;
 height: 48px;

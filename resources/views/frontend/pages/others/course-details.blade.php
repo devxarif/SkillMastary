@@ -2150,7 +2150,9 @@
                             <a class="button button--lg" href="#">Add to Cart</a>
                             <a class="button button--lg button-p-s" href="#">Buy now</a>
                             <div class="add-to-wishlist-wrap">
-                                <a class="add-to-wishlist" href="#">Add to wishlist</a>
+                                {{-- Wishlist --}}
+                                <livewire:frontend.course.course-details-wishlist :wishlisted="$course->wishlisted" :course="$course->id"/>
+
                                 <a class="add-to-wishlist" href="gift-course.html">Gift Course</a>
                             </div>
                             <p><span>Note:</span> all course have 30-days money-back guarantee</p>

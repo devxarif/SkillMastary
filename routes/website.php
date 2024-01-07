@@ -54,7 +54,7 @@ Route::name('website.')->group(function(){
         Route::get('/', 'index')->name('index');
         Route::get('/about', 'about')->name('about');
         Route::get('/courses', 'course')->name('course');
-        Route::get('/courses/{hello}', 'courseDetails')->name('course.details');
+        Route::get('/course/{course:slug}', 'courseDetails')->name('course.details');
         Route::get('/contact', 'contact')->name('contact');
         Route::get('/become-instructor', 'becomeInstructor')->name('become-instructor');
         Route::get('/user/dashboard', 'dashboard')->name('dashboard');

@@ -6,7 +6,7 @@
             <img src="{{ $course->thumbnail_url }}" alt="course image">
         </div>
         <div class="course-item-5-card-info">
-            <a href="#" class="course-item-5-card-info-tag tag-color2">
+            <a href="{{ route('website.course.details', $course?->slug) }}" class="course-item-5-card-info-tag tag-color2">
                 {{ $course?->category?->name }}
             </a>
             @if ($course?->price)
@@ -22,7 +22,7 @@
                 </span>
             @endif
         </div>
-        <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">
+        <a href="{{ route('website.course.details', $course?->slug) }}" class="course-item-5-card-head">
             {{ $course?->title }}
         </a>
         <div class="course-item-5-card-footer">
@@ -132,7 +132,7 @@
             </h5>
 
             {{-- Wishlist --}}
-            <livewire:frontend.course-wishlist :wishlisted="$course->wishlisted" :course="$course->id"/>
+            <livewire:frontend.course.course-wishlist :wishlisted="$course->wishlisted" :course="$course->id"/>
         </div>
         <div class="what-your-learn">
             <h5>What you’ll learn</h5>
@@ -183,7 +183,9 @@
 
                 Add to Cart
             </a>
-            <a class="button button--md button-p-s" href="{{ route('website.course.details', '123') }}">Course Detail</a>
+            <a class="button button--md button-p-s" href="{{ route('website.course.details', $course?->slug) }}">
+                {{ __('Course Detail') }}
+            </a>
         </div>
     </div>
 </div>

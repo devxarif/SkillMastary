@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Models\Course;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Services\Frontend\Public\FetchHomePageService;
@@ -73,8 +74,10 @@ class WebsiteController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function courseDetails(){
-        return view('frontend.pages.others.course-details');
+    public function courseDetails(Course $course){
+        $course->load('category', 'subcategory', 'user');
+
+        return view('frontend.pages.others.course-details', compact('course'));
     }
 
     /**
