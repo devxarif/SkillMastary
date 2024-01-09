@@ -16,6 +16,18 @@ class UserSeeder extends Seeder
     {
         $this->createStudent();
         $this->createInstructor();
+
+        // Student creation
+        User::factory(10)->create(['role' => 'student'])->each(function ($user) {
+            Student::factory()->create(['user_id' => $user->id]);
+        });
+
+        // Instructor creation
+        User::factory(10)->create(['role' => 'instructor'])->each(function ($user) {
+            Instructor::factory()->create([
+                'user_id' => $user->id
+            ]);
+        });
     }
 
     private function createStudent(): void

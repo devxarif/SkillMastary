@@ -23,6 +23,9 @@ class CourseFactory extends Factory
     {
         $price = fake()->randomFloat(2, 0, 999999.99);
         $discountPrice = fake()->randomFloat(2, 0, $price);
+        $total_review = rand(1, 100);
+        $total_stars = $total_review * rand(1, 5);
+        $featured = rand(0, 1);
 
         return [
             "uuid" => fake()->uuid,
@@ -40,15 +43,15 @@ class CourseFactory extends Factory
             "usd_discount_price" => fake()->randomFloat(2, 0, 999999.99),
             "duration" => Arr::random(['6 hour', '12 hour', '18 hour', '24 hour']),
             "total_enrolled" => fake()->randomNumber(),
-            "total_stars" => fake()->randomNumber(),
-            "total_reviews" => fake()->randomFloat(2, 0, 999999.99),
+            "total_stars" => $total_stars,
+            "total_reviews" => $total_review,
             "revenue" => fake()->randomFloat(2, 0, 999999.99),
             "status" => fake()->randomElement(["draft","published","rejected","pending", 'published', 'published']),
             "meta_keywords" => fake()->word,
             "meta_description" => fake()->sentence(4),
-            "is_featured" => fake()->boolean,
+            "is_featured" => $featured,
             "is_popular" => fake()->boolean,
-            "featured_at" => fake()->dateTime,
+            "featured_at" => $featured ? fake()->dateTime: null,
             "published_at" => fake()->dateTime,
         ];
     }

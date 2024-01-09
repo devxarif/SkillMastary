@@ -51,7 +51,9 @@ class Course extends Model
     public function getAvgRatingAttribute()
     {
         if ($this->total_reviews > 0 && $this->total_stars > 0) {
-            return $this->total_reviews > 0 ? round($this->total_stars / $this->total_reviews, 1) : 0;
+            $rating = $this->total_reviews > 0 ? round($this->total_stars / $this->total_reviews, 2) : 0;
+
+            return number_format($rating, 2);
         }
 
         return 0;

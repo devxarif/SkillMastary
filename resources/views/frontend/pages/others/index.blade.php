@@ -294,7 +294,7 @@
     <div class="container">
         <div class="feature-course-wrap">
             <div class="section-title">
-                <h2>op instructor</h2>
+                <h2>Top instructor</h2>
             </div>
             <div class="course-item-5-grid">
                 <div class="course-item-5">
