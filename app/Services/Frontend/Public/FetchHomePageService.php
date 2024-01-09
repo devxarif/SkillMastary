@@ -10,11 +10,13 @@ class FetchHomePageService
     public function execute()
     {
         $categories = $this->fetchTopCategories();
+        $topRatedCourses = $this->fetchTopRatedCourses();
         $featuredCourses = $this->fetchFeaturedCourses();
         $latestCourses = $this->fetchLatestCourses();
 
         return [
             'categories' => $categories,
+            'topRatedCourses' => $topRatedCourses,
             'featuredCourses' => $featuredCourses,
             'latestCourses' => $latestCourses,
         ];
@@ -29,6 +31,16 @@ class FetchHomePageService
         ->having('courses_count', '>', 0)
         ->take(12)
         ->get();
+    }
+
+    private function fetchTopRatedCourses()
+    {
+        return Course::with(['user:id,name,avatar', 'category:id,name,slug'])
+            ->published()
+            ->latest('total_stars')
+            ->latest('total_reviews')
+            ->take(10)
+            ->get();
     }
 
     private function fetchFeaturedCourses()

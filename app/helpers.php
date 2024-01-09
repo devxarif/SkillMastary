@@ -1,6 +1,7 @@
 <?php
 
 use Carbon\Carbon;
+use Illuminate\Support\Number;
 
 /*
 |--------------------------------------------------------------------------
@@ -128,14 +129,11 @@ if (! function_exists('formatDateTime')) {
     }
 }
 
-function formatNumber($n)
+function formatNumber($numbers, $precision = 2)
 {
-    if (!$n || !is_numeric($n) || $n < 1000) return $n;
+    if (!$numbers || !is_numeric($numbers)) return $numbers;
 
-    $suffix = ['','k','M','G','T','P','E','Z','Y'];
-    $power = floor(log($n, 1000));
-
-    return round($n/(1000**$power),1,PHP_ROUND_HALF_EVEN).$suffix[$power];
+    return Number::abbreviate($numbers, $precision);
 };
 
 

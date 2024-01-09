@@ -1,13 +1,16 @@
-@props(['course'])
+@props([
+    'course',
+    'cardClass' => 'course-item-4',
+])
 
-<div class="course-item-4">
+<div class="{{ $cardClass }}">
     <div class="course-item-5-card">
-        <div class="course-item-5-card-img">
+        <a href="{{ route('website.course.details', $course?->slug) }}" class="course-item-5-card-img">
             <img src="{{ $course->thumbnail_url }}" alt="course image">
-        </div>
+        </a>
         <div class="course-item-5-card-info">
-            <a href="{{ route('website.course.details', $course?->slug) }}" class="course-item-5-card-info-tag tag-color2">
-                {{ $course?->category?->name }}
+            <a href="{{ route('website.course.details', $course?->slug) }}" class="course-item-5-card-info-tag tag-color2" title="{{ $course?->category?->name }}">
+                {{ Str::limit($course?->category?->name, 15, '...') }}
             </a>
             @if ($course?->price)
                 <p class="course-item-5-card-info-price">
@@ -51,7 +54,7 @@
                         {{ $course?->category?->name }}
                     </a>
                 </div>
-                <a href="#" class="feature-course-head">
+                <a href="{{ route('website.course.details', $course?->slug) }}" class="feature-course-head">
                     {{ $course?->title }}
                 </a>
                 <div class="feature-course-mid">

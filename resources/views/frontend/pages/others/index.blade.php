@@ -27,7 +27,7 @@
 <div class="category-section section-padding">
     <div class="container">
         <div class="section-title">
-            <h2>Browse with top category</h2>
+            <h2>{{ __('Browse with top category') }}</h2>
         </div>
         <div class="row">
             @foreach ($categories as $category)
@@ -47,7 +47,7 @@
             @endforeach
         </div>
         <div class="icon-bottom-btn mt-4">
-            <p>We have more category & subcategory. <a href="{{ route('website.course') }}">Browse All
+            <p>{{ __('We have more category & subcategory') }} <a href="{{ route('website.course') }}">{{ __('Browse All') }}
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.75 12H20.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -63,280 +63,12 @@
 <div class="course-section grid5">
     <div class="container">
         <div class="section-title">
-            <h2>Explore our top courses</h2>
+            <h2>{{ __('Explore top-rated courses') }}</h2>
         </div>
         <div class="course-item-5-grid">
-            <div class="course-item-5">
-                <div class="course-item-5-card">
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img">
-                        <img src="{{ asset('frontend') }}/images/course1.jpg" alt="">
-                    </a>
-                    <div class="course-item-5-card-info">
-                        <button class="course-item-5-card-info-tag">Design</button>
-                        <p class="course-item-5-card-info-price">$57</p>
-                    </div>
-                    <a href="course-single.html" class="course-item-5-card-head">Machine Learning A-Z™: Hands-On
-                        Python & R In Data...</a>
-                    <div class="course-item-5-card-footer">
-                        <p class="course-item-5-card-footer-review align-self-center">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
-                                    fill="#FD8E1F" />
-                            </svg>
-                            5.0
-                        </p>
-                        <p class="course-item-5-card-footer-student">
-                            265.7K <span>students</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="course-item-5">
-                <div class="course-item-5-card">
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img">
-                        <img src="{{ asset('frontend') }}/images/course2.jpg" alt="">
-                    </a>
-                    <div class="course-item-5-card-info">
-                        <button class="course-item-5-card-info-tag tag-color2">Developments</button>
-                        <p class="course-item-5-card-info-price">$57</p>
-                    </div>
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Complete 2021 Web Development
-                        Bootcamp</a>
-                    <div class="course-item-5-card-footer">
-                        <p class="course-item-5-card-footer-review align-self-center">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
-                                    fill="#FD8E1F" />
-                            </svg>
-                            5.0
-                        </p>
-                        <p class="course-item-5-card-footer-student">
-                            265.7K <span>students</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="course-item-5">
-                <div class="course-item-5-card">
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img">
-                        <img src="{{ asset('frontend') }}/images/course3.jpg" alt="">
-                    </a>
-                    <div class="course-item-5-card-info">
-                        <button class="course-item-5-card-info-tag tag-color3">Business</button>
-                        <p class="course-item-5-card-info-price">$57</p>
-                    </div>
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Learn Python Programming
-                        Masterclass</a>
-                    <div class="course-item-5-card-footer">
-                        <p class="course-item-5-card-footer-review align-self-center">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
-                                    fill="#FD8E1F" />
-                            </svg>
-                            5.0
-                        </p>
-                        <p class="course-item-5-card-footer-student">
-                            265.7K <span>students</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="course-item-5">
-                <div class="course-item-5-card">
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img">
-                        <img src="{{ asset('frontend') }}/images/course4.jpg" alt="">
-                    </a>
-                    <div class="course-item-5-card-info">
-                        <button class="course-item-5-card-info-tag tag-color2">Marketing</button>
-                        <p class="course-item-5-card-info-price">$57</p>
-                    </div>
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Complete Digital Marketing
-                        Course - 12 Courses in 1</a>
-                    <div class="course-item-5-card-footer">
-                        <p class="course-item-5-card-footer-review align-self-center">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
-                                    fill="#FD8E1F" />
-                            </svg>
-                            5.0
-                        </p>
-                        <p class="course-item-5-card-footer-student">
-                            265.7K <span>students</span>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="course-item-5">
-                <div class="course-item-5-card">
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img">
-                        <img src="{{ asset('frontend') }}/images/course5.jpg" alt="">
-                    </a>
-                    <div class="course-item-5-card-info">
-                        <button class="course-item-5-card-info-tag">IT & Software</button>
-                        <p class="course-item-5-card-info-price">$57</p>
-                    </div>
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Reiki Level I, II and
-                        Master/Teacher Program</a>
-                    <div class="course-item-5-card-footer">
-                        <p class="course-item-5-card-footer-review align-self-center">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
-                                    fill="#FD8E1F" />
-                            </svg>
-                            5.0
-                        </p>
-                        <p class="course-item-5-card-footer-student">
-                            265.7K <span>students</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="course-item-5">
-                <div class="course-item-5-card">
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img">
-                        <img src="{{ asset('frontend') }}/images/course6.jpg" alt="">
-                    </a>
-                    <div class="course-item-5-card-info">
-                        <button class="course-item-5-card-info-tag">Music</button>
-                        <p class="course-item-5-card-info-price">$57</p>
-                    </div>
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">MThe Complete Foundation Stock
-                        Trading Course</a>
-                    <div class="course-item-5-card-footer">
-                        <p class="course-item-5-card-footer-review align-self-center">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
-                                    fill="#FD8E1F" />
-                            </svg>
-                            5.0
-                        </p>
-                        <p class="course-item-5-card-footer-student">
-                            265.7K <span>students</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="course-item-5">
-                <div class="course-item-5-card">
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img">
-                        <img src="{{ asset('frontend') }}/images/course7.jpg" alt="">
-                    </a>
-                    <div class="course-item-5-card-info">
-                        <button class="course-item-5-card-info-tag tag-color2">Marketing</button>
-                        <p class="course-item-5-card-info-price">$57</p>
-                    </div>
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Beginner to Pro in Excel: Financial
-                        Modeling and Valuati...</a>
-                    <div class="course-item-5-card-footer">
-                        <p class="course-item-5-card-footer-review align-self-center">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
-                                    fill="#FD8E1F" />
-                            </svg>
-                            5.0
-                        </p>
-                        <p class="course-item-5-card-footer-student">
-                            265.7K <span>students</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="course-item-5">
-                <div class="course-item-5-card">
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img">
-                        <img src="{{ asset('frontend') }}/images/course8.jpg" alt="">
-                    </a>
-                    <div class="course-item-5-card-info">
-                        <button class="course-item-5-card-info-tag tag-color3">Health & Fitness</button>
-                        <p class="course-item-5-card-info-price">$57</p>
-                    </div>
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">The Python Mega Course: Build 10
-                        Real World Applications</a>
-                    <div class="course-item-5-card-footer">
-                        <p class="course-item-5-card-footer-review align-self-center">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
-                                    fill="#FD8E1F" />
-                            </svg>
-                            5.0
-                        </p>
-                        <p class="course-item-5-card-footer-student">
-                            265.7K <span>students</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="course-item-5">
-                <div class="course-item-5-card">
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img">
-                        <img src="{{ asset('frontend') }}/images/course1.jpg" alt="">
-                    </a>
-                    <div class="course-item-5-card-info">
-                        <button class="course-item-5-card-info-tag tag-color2">design</button>
-                        <p class="course-item-5-card-info-price">$57</p>
-                    </div>
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Copywriting - Become a Freelance
-                        Copywriter, your ow...</a>
-                    <div class="course-item-5-card-footer">
-                        <p class="course-item-5-card-footer-review align-self-center">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
-                                    fill="#FD8E1F" />
-                            </svg>
-                            5.0
-                        </p>
-                        <p class="course-item-5-card-footer-student">
-                            265.7K <span>students</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="course-item-5">
-                <div class="course-item-5-card">
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-img">
-                        <img src="{{ asset('frontend') }}/images/course1.jpg" alt="">
-                    </a>
-                    <div class="course-item-5-card-info">
-                        <button class="course-item-5-card-info-tag">Lifestyle</button>
-                        <p class="course-item-5-card-info-price">$57</p>
-                    </div>
-                    <a href="{{ route('website.course.details', '123') }}" class="course-item-5-card-head">Google Analytics Certification -
-                        Learn How To Pass The Exam</a>
-                    <div class="course-item-5-card-footer">
-                        <p class="course-item-5-card-footer-review align-self-center">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
-                                    fill="#FD8E1F" />
-                            </svg>
-                            5.0
-                        </p>
-                        <p class="course-item-5-card-footer-student">
-                            265.7K <span>students</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            @foreach ($topRatedCourses as $course)
+                <x-frontend.course.simple-card :course="$course" card-class="course-item-5" />
+            @endforeach
         </div>
     </div>
 </div>
@@ -346,7 +78,7 @@
     <div class="container">
         <div class="feature-course-wrap">
             <div class="section-title section-title2">
-                <h2>Our featured courses</h2>
+                <h2>{{ __('Featured courses') }}</h2>
                 <p>Vestibulum sed dolor sed diam mollis maximus vel nec dolor.<br /> Donec varius purus et eleifend
                     porta.</p>
             </div>
@@ -358,7 +90,8 @@
                 @endforeach
             </div>
             <div class="footer-button text-center mt-3">
-                <a class="button button--lg button-p-s button-i--r" href="http://127.0.0.1:8000/courses">View all featured courses
+                <a href="#" class="button button--lg button-p-s button-i--r" href="http://127.0.0.1:8000/courses">
+                    {{ __('View all featured courses') }}
                     <span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.75 12H20.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -377,7 +110,7 @@
 <div class="course-section section-padding">
     <div class="container">
         <div class="section-title">
-            <h2>Recently added courses</h2>
+            <h2>{{ __('Recently added courses') }}</h2>
         </div>
         <div class="row">
             @foreach ($latestCourses as $course)
@@ -387,7 +120,8 @@
             @endforeach
         </div>
         <div class="footer-button text-center mt-3">
-            <a class="button button--lg button-p-s button-i--r" href="{{ route('website.course') }}">Browse all Course
+            <a class="button button--lg button-p-s button-i--r" href="{{ route('website.course') }}">
+                {{ __('Browse all course') }}
                 <span>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.75 12H20.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
@@ -406,7 +140,7 @@
     <div class="container">
         <div class="feature-course-wrap">
             <div class="section-title section-title2">
-                <h2>Our featured instructor</h2>
+                <h2>{{ __('Featured instructor') }}</h2>
             </div>
             <div class="mb-5">
                 <div class="tw-max-w-3xl md:tw-flex md:tw-items-center md:tw-justify-between md:tw-space-x-5 lg:tw-max-w-7xl">
@@ -560,7 +294,7 @@
     <div class="container">
         <div class="feature-course-wrap">
             <div class="section-title">
-                <h2>Our top instructor</h2>
+                <h2>op instructor</h2>
             </div>
             <div class="course-item-5-grid">
                 <div class="course-item-5">

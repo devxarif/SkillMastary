@@ -2,7 +2,7 @@
 
 <div class="feature-course">
     <div class="feature-course-left">
-        <a href="{{ route('website.course.details', '123') }}" class="feature-course-img">
+        <a href="{{ route('website.course.details', $course?->slug) }}" class="feature-course-img">
             <img src="{{ $course->thumbnail_url }}" alt="course image">
         </a>
     </div>
@@ -14,13 +14,13 @@
                         {{ $course?->category?->name }}
                     </a>
                     <p class="feature-course-info-price">
-                        ${{ $course?->price }}
+                        ${{ formatNumber($course?->price) }}
                         @if ($course?->discount_price)
-                            <span>${{ $course->discount_price }}</span>
+                            <span>${{ formatNumber($course?->discount_price) }}</span>
                         @endif
                     </p>
                 </div>
-                <a href="{{ route('website.course.details', '123') }}" class="feature-course-head">
+                <a href="{{ route('website.course.details', $course?->slug) }}" class="feature-course-head">
                     {{ $course?->title }}
                 </a>
                 <div class="feature-course-mid">

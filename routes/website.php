@@ -9,8 +9,25 @@ use App\Http\Controllers\Frontend\SocialLoginController;
 use App\Models\Course;
 use App\Models\CourseWishlist;
 use App\Models\User;
+use Illuminate\Support\Number;
 
 Route::get('/test', function(){
+
+    Number::macro('toDollars', function(){
+        return '$'.number_format($this->value, 2);
+    });
+
+    $number = Number::abbreviate(1234.56, 2);
+    $number2 = formatNumber(1234.56);
+
+    return [
+        $number,
+        $number2
+    ];
+
+
+    return $number->toDollars();
+
     $course = Course::find(44);
     $user = authUser();
     $alreadyWishlist = CourseWishlist::where('user_id', $user->id)->where('course_id', $course->id)->first();
