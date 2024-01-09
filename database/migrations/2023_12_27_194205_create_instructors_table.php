@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('instructors', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->boolean('is_featured')->default(false);
+            $table->timestamp('featured_at')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

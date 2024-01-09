@@ -16,7 +16,7 @@ class CourseSeeder extends Seeder
     public function run(): void
     {
         Course::factory(50)->create()->each(function ($course) {
-            CourseRating::factory(20)->create([
+            CourseRating::factory(200)->create([
                 'course_id' => $course->id,
             ]);
             CourseWishlist::factory(rand(1, 10))->create([

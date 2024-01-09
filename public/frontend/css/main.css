@@ -4653,6 +4653,7 @@ letter-spacing: -0.01em;
 color: #1d2026;
 margin-left: 6px;
 align-self: center;
+font-family: "Inter", sans-serif;
 }
 
 .feature-course-mid p span
@@ -4661,6 +4662,7 @@ font-size: 14px;
 line-height: 24px;
 color: #a1a5b3;
 font-weight: 400;
+font-family: "Inter", sans-serif;
 }
 
 .feature-course-footer
@@ -12972,7 +12974,7 @@ padding: 15px;
 color: #1d2026;
 }
 
-.student-profile-menu ul li a::before
+/* .student-profile-menu ul li a::before
 {
 content: "";
 left: 0;
@@ -12982,7 +12984,7 @@ height: 3px;
 transition: all 0.3s;
 position: absolute;
 background-color: #ff6636;
-}
+} */
 
 .student-profile-menu ul li a:hover::before
 {
@@ -13041,7 +13043,7 @@ color: #1d2026;
 background-color: transparent;
 }
 
-.student-tabs-wrap .nav-pills .nav-link.active::before
+/* .student-tabs-wrap .nav-pills .nav-link.active::before
 {
 content: "";
 left: 0;
@@ -13051,6 +13053,11 @@ height: 3px;
 transition: all 0.3s;
 position: absolute;
 background-color: #ff6636;
+} */
+
+.student-profile-menu ul li a.active {
+    border-bottom: 3px solid #ff6636 !important;
+    transition: all 0.3s;
 }
 
 .student-tabs-wrap .message

@@ -3,7 +3,9 @@
 namespace App\Models;
 
 use App\Models\User;
+use App\Traits\HasUser;
 use App\Models\Category;
+use App\Traits\HasFeature;
 use App\Models\CourseLevel;
 use App\Models\Subcategory;
 use App\Models\CourseWishlist;
@@ -13,7 +15,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Course extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes, HasFeature, HasUser;
 
     protected $guarded = [];
 
@@ -33,11 +35,6 @@ class Course extends Model
     public function scopePopular($query)
     {
         return $query->where('is_popular', true);
-    }
-
-    public function scopeFeatured($query)
-    {
-        return $query->where('is_featured', true)->whereNotNull('featured_at');
     }
 
     public function setTitleAttribute($value)
@@ -73,11 +70,6 @@ class Course extends Model
     public function courseLevel()
     {
         return $this->belongsTo(CourseLevel::class);
-    }
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
     }
 
     public function wishlists()
