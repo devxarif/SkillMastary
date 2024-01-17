@@ -4,6 +4,7 @@ namespace App\Services\Frontend\Public;
 
 use App\Models\Course;
 use App\Models\Category;
+use App\Models\Instructor;
 
 class FetchHomePageService
 {
@@ -13,12 +14,16 @@ class FetchHomePageService
         $topRatedCourses = $this->fetchTopRatedCourses();
         $featuredCourses = $this->fetchFeaturedCourses();
         $latestCourses = $this->fetchLatestCourses();
+        $featuredInstructor = $this->fetchFeaturedInstructor();
+        $topInstructors = $this->fetchTopInstructors();
 
         return [
             'categories' => $categories,
             'topRatedCourses' => $topRatedCourses,
             'featuredCourses' => $featuredCourses,
             'latestCourses' => $latestCourses,
+            'featuredInstructor' => $featuredInstructor,
+            'topInstructors' => $topInstructors,
         ];
     }
 
@@ -35,7 +40,7 @@ class FetchHomePageService
 
     private function fetchTopRatedCourses()
     {
-        return Course::with(['user:id,name,avatar', 'category:id,name,slug'])
+        return Course::with(['user:id,name,avatar', 'category:id,name,slug', 'courseLevel:id,name'])
             ->published()
             ->latest('total_stars')
             ->latest('total_reviews')
@@ -55,7 +60,7 @@ class FetchHomePageService
 
     private function fetchLatestCourses()
     {
-        return Course::with(['user:id,name,avatar', 'category:id,name,slug'])
+        return Course::with(['user:id,name,avatar', 'category:id,name,slug', 'courseLevel:id,name'])
             ->published()
             ->latest('published_at')
             ->withCount(['wishlists as wishlisted' => function ($q) {
@@ -64,15 +69,36 @@ class FetchHomePageService
             ])
             ->take(8)
             ->get();
+    }
 
+    private function fetchFeaturedInstructor()
+    {
+        $instructor = Instructor::with(['user:id,name,avatar'])
+            ->featured()
+            ->latest('featured_at')
+            ->first();
 
-            // $featured_jobs_query = Job::query()->withoutEdited()->with('company.user', 'job_type:id,name', 'category')->withCount([
-            //     'bookmarkJobs', 'appliedJobs',
-            //     'bookmarkJobs as bookmarked' => function ($q) {
-            //         $q->where('candidate_id', auth('user')->check() && currentCandidate() ? currentCandidate()->id : '');
-            //     }, 'appliedJobs as applied' => function ($q) {
-            //         $q->where('candidate_id', auth('user')->check() && currentCandidate() ? currentCandidate()->id : '');
-            //     },
-            // ]);
+        $instructor->courses = [];
+
+        if ($instructor) {
+            $instructor->courses = Course::with(['user:id,name,avatar', 'category:id,name,slug', 'courseLevel:id,name'])
+                ->published()
+                ->whereBelongsTo($instructor->user)
+                ->latest('published_at')
+                ->take(10)
+                ->get();
+            $instructor->total_courses = $instructor->courses->count();
+        }
+
+        return $instructor;
+    }
+
+    private function fetchTopInstructors()
+    {
+        return Instructor::with(['user:id,name,avatar,title'])
+            ->popular()
+            ->latest('popular_at')
+            ->take(5)
+            ->get();
     }
 }

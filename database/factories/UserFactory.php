@@ -24,7 +24,7 @@ class UserFactory extends Factory
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'role' => fake()->randomElement(['student', 'instructor', 'affiliator', 'organization']),
             'phone_number' => fake()->phoneNumber(),
-            'title' => fake()->sentence(),
+            'title' => fake()->name(),
             'bio' => fake()->paragraph(),
             'address' => fake()->address(),
             'remember_token' => Str::random(10),

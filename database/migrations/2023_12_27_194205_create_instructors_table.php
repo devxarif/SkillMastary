@@ -14,10 +14,13 @@ return new class extends Migration
         Schema::create('instructors', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->integer('total_enrolled')->default(0);
             $table->integer('total_stars')->default(0);
             $table->float('total_reviews')->default(0.00);
             $table->boolean('is_featured')->default(false);
             $table->timestamp('featured_at')->nullable();
+            $table->boolean('is_popular')->default(false);
+            $table->timestamp('popular_at')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

@@ -66,7 +66,14 @@ class UserSeeder extends Seeder
         ]);
 
         Instructor::create([
-            'user_id' => $student_user->id
+            'user_id' => $student_user->id,
+            'total_enrolled' => 1000,
+            'total_stars' => 100,
+            'total_reviews' => 30,
+            'is_featured' => 1,
+            'featured_at' => now(),
+            'is_popular' => 1,
+            'popular_at' => now(),
         ]);
     }
 }
