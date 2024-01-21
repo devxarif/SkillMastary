@@ -6,6 +6,7 @@ use App\Models\Course;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Services\Frontend\Public\FetchHomePageService;
+use App\Services\Frontend\Public\FetchCourseQueryService;
 
 class WebsiteController extends Controller
 {
@@ -53,7 +54,15 @@ class WebsiteController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function course(){
+    public function course(Request $request){
+        if ($request->hasAny(['page','search', 'category', 'level', 'price', 'duration', 'rating'])) {
+            // request()->remove('api');
+
+            // unset($request['api']);
+
+            return (new FetchCourseQueryService())->execute($request);
+        }
+
         return view('frontend.pages.others.course');
     }
 

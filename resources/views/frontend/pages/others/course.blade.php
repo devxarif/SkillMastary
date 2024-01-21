@@ -1152,7 +1152,7 @@
                 search: {
                     handler: function (val) {
                         if (val && val.length >= 3) {
-                            this.filterData();
+                            this.fetchData();
                         }
                     },
                     deep: true
@@ -1163,23 +1163,7 @@
                     try {
                         this.pageloading = true;
 
-                        var response = await axios.get('/fetch/courses')
-                        console.log(response)
-                        this.courses = response.data.courses.data;
-                        this.next_page_url = response.data.courses.next_page_url;
-                        this.current_url = response.data.current_url;
-
-                        this.pageloading = false;
-                    } catch (error) {
-                        this.pageloading = false;
-                        alert('An error occurred while fetching data.');
-                    }
-                },
-                async filterData(){
-                    try {
-                        this.pageloading = true;
-
-                        var response = await axios.get('/fetch/courses', {
+                        var response = await axios.get('/courses', {
                             params: {
                                 search: this.search,
                                 // category: this.category,
@@ -1189,9 +1173,11 @@
                                 // rating: this.rating,
                             }
                         })
+                        console.log(response.data);
                         this.courses = response.data.courses.data;
-                        console.log(response.data.data);
-                        // this.next_page_url = response.data.next_page_url;
+                        this.next_page_url = response.data.courses.next_page_url;
+                        this.current_url = response.data.current_url;
+                        this.fetchCurrentUrl();
 
                         this.pageloading = false;
                     } catch (error) {
@@ -1203,9 +1189,22 @@
                     try {
                         this.buttonloading = true;
 
-                        var response = await axios.get(this.next_page_url)
-                        this.courses = [...this.courses, ...response.data.data.courses];
-                        this.next_page_url = response.data.data.next_page_url;
+                        var response = await axios.get(this.next_page_url, {
+                            params: {
+                                search: this.search,
+                                // category: this.category,
+                                // level: this.level,
+                                // price: this.price,
+                                // duration: this.duration,
+                                // rating: this.rating,
+                            }
+                        })
+                        console.log(response.data);
+
+                        this.courses = [...this.courses, ...response.data.courses.data];
+                        this.next_page_url = response.data.courses.next_page_url;
+                        this.current_url = response.data.current_url;
+                        this.fetchCurrentUrl();
 
                         this.buttonloading = false;
                     } catch (error) {
