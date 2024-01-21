@@ -25,7 +25,13 @@ class Course extends Model
         'published_at' => 'datetime',
     ];
 
-    protected $appends = ['thumbnail_url', 'avg_rating'];
+    protected $appends = [
+        'thumbnail_url',
+        'avg_rating',
+        'details_url',
+        'formatted_price',
+        'formatted_reviews'
+    ];
 
     public function scopePublished($query)
     {
@@ -57,6 +63,21 @@ class Course extends Model
         }
 
         return 0;
+    }
+
+    public function getDetailsUrlAttribute()
+    {
+        return route('website.course.details', $this->slug);
+    }
+
+    public function getFormattedPriceAttribute()
+    {
+        return formatNumber($this->price);
+    }
+
+    public function getFormattedReviewsAttribute()
+    {
+        return formatNumber($this->total_reviews);
     }
 
     public function category()

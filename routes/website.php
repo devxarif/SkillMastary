@@ -6,13 +6,21 @@ use App\Http\Controllers\Frontend\StudentController;
 use App\Http\Controllers\Frontend\WebsiteController;
 use App\Http\Controllers\Frontend\InstructorController;
 use App\Http\Controllers\Frontend\SocialLoginController;
+use App\Http\Controllers\Frontend\WebsiteApiController;
 use App\Models\Course;
 use App\Models\CourseWishlist;
 use App\Models\User;
 use Illuminate\Support\Number;
 
 Route::get('/test', function(){
+    return today()->format('Y-m-d')->timezone('Asia/Dhaka');
+    return url()->previous();
+    return request()->getRequestUri();
+    $url = request()->fullUrl();
+    return $path = parse_url($url, PHP_URL_PATH);
+    $pathSegments = explode('/', $path);
 
+    return $pathSegments;
     Number::macro('toDollars', function(){
         return '$'.number_format($this->value, 2);
     });
@@ -75,6 +83,11 @@ Route::name('website.')->group(function(){
         Route::get('/contact', 'contact')->name('contact');
         Route::get('/become-instructor', 'becomeInstructor')->name('become-instructor');
         Route::get('/user/dashboard', 'dashboard')->name('dashboard');
+    });
+
+    Route::controller(WebsiteApiController::class)->group(function(){
+        Route::get('/fetch/courses', 'fetchCourse');
+        Route::get('/fetch/current/url', 'fetchCurrentUrl');
     });
 
     // Student Controller
