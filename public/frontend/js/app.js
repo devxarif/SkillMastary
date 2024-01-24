@@ -4,7 +4,7 @@
   'use strict';
   /*------------------------------------------------------------------
   [Table of contents]
-   
+
   -------------------------------------------------------------------*/
 
   /*--------------------------------------------------------------
@@ -344,7 +344,7 @@
         nav: true,
         dots: false,
         items: 6,
-        navText: ['<img src="assets/images/svg-icon/arrowleft-orange.svg"/>', '<img src="assets/images/svg-icon/arrowright-orange.svg"/>'],
+        navText: ['<img src="../frontend/images/svg-icon/arrowleft-orange.svg"/>', '<img src="../frontend/images/svg-icon/arrowright-orange.svg"/>'],
         responsive: {
           0: {
             items: 1,
@@ -843,7 +843,7 @@
         nav: false,
         dots: false,
         items: 1,
-        navText: ['<img src="assets/images/svg-icon/arrowleft-orange.svg"/>', '<img src="assets/images/svg-icon/arrowright-orange.svg"/>']
+        navText: ['<img src="../frontend/images/svg-icon/arrowleft-orange.svg"/>', '<img src="../frontend/images/svg-icon/arrowright-orange.svg"/>']
       });
       var selector = $('.owl-carousel');
       $('.my-next-button').click(function () {
@@ -895,7 +895,7 @@
         nav: true,
         dots: false,
         items: 4,
-        navText: ['<img src="assets/images/svg-icon/arrowleft-orange.svg"/>', '<img src="assets/images/svg-icon/arrowright-orange.svg"/>'],
+        navText: ['<img src="../frontend/images/svg-icon/arrowleft-orange.svg"/>', '<img src="../frontend/images/svg-icon/arrowright-orange.svg"/>'],
         responsive: {
           0: {
             items: 1,
@@ -927,7 +927,7 @@
         nav: false,
         dots: true,
         items: 1,
-        navText: ["<img src=\"assets/images/svg-icon/arrowleft-orange.svg\"/>", "<img src=\"assets/images/svg-icon/arrowright-orange.svg\"/>"]
+        navText: ["<img src=\"../frontend/images/svg-icon/arrowleft-orange.svg\"/>", "<img src=\"../frontend/images/svg-icon/arrowright-orange.svg\"/>"]
       });
       var selector = $('.owl-carousel');
       $('.card-next-button').click(function () {

@@ -35,7 +35,7 @@
                     <a class="d-block" href="category.html">
                         <div class="category-content badge-color-1">
                             <div class="category-content-left">
-                                <img src="{{ asset($category->image) }}" alt="category_image">
+                                <img src="{{ $category->image_url }}" alt="category_image">
                             </div>
                             <div class="category-content-right">
                                 <h4>{{ $category->name }}</h4>

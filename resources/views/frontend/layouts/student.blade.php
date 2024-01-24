@@ -11,11 +11,11 @@
             <div class="student-profile-header">
                 <div class="student-profile-left">
                     <div class="student-thumb">
-                        <img src="assets/images/photos.png" alt="" />
+                        <img src="{{ authUser()->avatar_url }}" alt="" />
                     </div>
                     <div class="student-data">
-                        <h3>Kevin Gilbert</h3>
-                        <p>Web Designer &amp; Best-Selling Instructor</p>
+                        <h3>{{ authUser()->name }}</h3>
+                        <p>{{ authUser()->title }}</p>
                     </div>
                 </div>
                 <div class="student-profile-right">

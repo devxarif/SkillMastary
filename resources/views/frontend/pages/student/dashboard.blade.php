@@ -132,7 +132,7 @@
             <div class="lecture-slider owl-carousel">
                 <div class="course-lecture-watched">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course4.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course4.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
@@ -145,7 +145,7 @@
                 </div>
                 <div class="course-lecture">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/slider1.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/slider1.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="course-lecture-watched">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/slider2.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/slider2.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Copywriting - Become a Freelance Copywriter...</div>
@@ -174,7 +174,7 @@
                 </div>
                 <div class="course-lecture">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/slider3.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/slider3.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">2021 Complete Python Bootcamp From Zero to</div>
@@ -189,7 +189,7 @@
                 </div>
                 <div class="course-lecture-watched">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course4.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course4.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
@@ -202,7 +202,7 @@
                 </div>
                 <div class="course-lecture">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/slider1.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/slider1.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -217,7 +217,7 @@
                 </div>
                 <div class="course-lecture-watched">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/slider2.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/slider2.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Copywriting - Become a Freelance Copywriter...</div>
@@ -231,7 +231,7 @@
                 </div>
                 <div class="course-lecture">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/slider3.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/slider3.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">2021 Complete Python Bootcamp From Zero to</div>
@@ -258,7 +258,7 @@
                     <label class="student-lebel">Search:</label>
                     <div class="form-searchbox">
                         <span class="icon">
-                            <img src="assets/images/svg-icon/search.svg" alt="" />
+                            <img src="{{ asset('frontend') }}/images/svg-icon/search.svg" alt="" />
                         </span>
                         <input type="text" placeholder="What do you want learn" />
                     </div>
@@ -303,7 +303,7 @@
             <div class="course-student-column">
                 <div class="course-lecture-watched course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course4.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course4.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
@@ -316,7 +316,7 @@
                 </div>
                 <div class="course-lecture course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course11.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course11.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -331,7 +331,7 @@
                 </div>
                 <div class="course-lecture-watched course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course12.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course12.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Copywriting - Become a Freelance Copywriter...</div>
@@ -345,7 +345,7 @@
                 </div>
                 <div class="course-lecture course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course13.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course13.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">2021 Complete Python Bootcamp From Zero to</div>
@@ -360,7 +360,7 @@
                 </div>
                 <div class="course-lecture course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course1.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course1.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -375,7 +375,7 @@
                 </div>
                 <div class="course-lecture course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course2.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course2.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -390,7 +390,7 @@
                 </div>
                 <div class="course-lecture-watched course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course4.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course4.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
@@ -403,7 +403,7 @@
                 </div>
                 <div class="course-lecture course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course3.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course3.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -419,7 +419,7 @@
 
                 <div class="course-lecture-watched course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course5.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course5.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
@@ -432,7 +432,7 @@
                 </div>
                 <div class="course-lecture-watched course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course6.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course6.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
@@ -445,7 +445,7 @@
                 </div>
                 <div class="course-lecture course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course7.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course7.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -460,7 +460,7 @@
                 </div>
                 <div class="course-lecture course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course8.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course8.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -475,7 +475,7 @@
                 </div>
                 <div class="course-lecture course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course9.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course9.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -490,7 +490,7 @@
                 </div>
                 <div class="course-lecture course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course10.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course10.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -505,7 +505,7 @@
                 </div>
                 <div class="course-lecture course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course11.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course11.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">The Complete 2021 Web Development</div>
@@ -520,7 +520,7 @@
                 </div>
                 <div class="course-lecture-watched course-column4">
                     <a href="{{ route('website.course.details', '123') }}" class="course-lecture-img">
-                        <img src="assets/images/course12.jpg" alt="" />
+                        <img src="{{ asset('frontend') }}/images/course12.jpg" alt="" />
                     </a>
                     <div class="all-title">
                         <div class="title-link">Reiki Level I, II and Master/Teacher Program</div>
@@ -578,7 +578,7 @@
                     <label class="student-lebel">Search:</label>
                     <div class="form-searchbox">
                         <span class="icon">
-                            <img src="assets/images/svg-icon/search.svg" alt="" />
+                            <img src="{{ asset('frontend') }}/images/svg-icon/search.svg" alt="" />
                         </span>
                         <input type="text" placeholder="What do you want learn" />
                     </div>
@@ -625,7 +625,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team6.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team6.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -654,7 +654,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team4.png" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team4.png" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -683,7 +683,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team7.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team7.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -712,7 +712,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team8.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team8.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -741,7 +741,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team9.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team9.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -770,7 +770,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team10.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team10.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -799,7 +799,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team11.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team11.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -828,7 +828,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team12.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team12.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -857,7 +857,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team13.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team13.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -886,7 +886,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team14.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team14.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -915,7 +915,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team20.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team20.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -944,7 +944,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team16.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team16.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -973,7 +973,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team17.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team17.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -1002,7 +1002,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team18.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team18.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -1031,7 +1031,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team19.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team19.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -1060,7 +1060,7 @@
                     <div class="course-item-5">
                         <div class="course-item-5-card">
                             <a href="instructor-profile.html" class="course-item-5-card-img team-thumb-instructor"><img
-                                    src="assets/images/team20.jpg" alt="" /></a>
+                                    src="{{ asset('frontend') }}/images/team20.jpg" alt="" /></a>
                             <div class="course-item-data">
                                 <h4>Wade Warren</h4>
                                 <p>Digital Product Designer</p>
@@ -1147,7 +1147,7 @@
                         <form action="#" class="form">
                             <div class="form-searchbox">
                                 <span class="icon">
-                                    <img src="assets/images/svg-icon/search.svg" alt="search-icon">
+                                    <img src="{{ asset('frontend') }}/images/svg-icon/search.svg" alt="search-icon">
                                 </span>
                                 <input type="text" placeholder="Search...">
                             </div>
@@ -1158,7 +1158,7 @@
                     <div class="message-sidebar__users-item active">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                                 <span class="user-active"></span>
                             </div>
                             <div class="user-info">
@@ -1174,7 +1174,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1189,7 +1189,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1204,7 +1204,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1219,7 +1219,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1234,7 +1234,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1249,7 +1249,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1264,7 +1264,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1279,7 +1279,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1294,7 +1294,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1309,7 +1309,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1324,7 +1324,7 @@
                     <div class="message-sidebar__users-item">
                         <div class="user">
                             <div class="user__img">
-                                <img src="assets/images/users/user-lg-01.png" alt="user-img">
+                                <img src="{{ asset('frontend') }}/images/users/user-lg-01.png" alt="user-img">
                             </div>
                             <div class="user-info">
                                 <h6 class="user-name">jane Cooper</h6>
@@ -1342,7 +1342,7 @@
                 <div class="message-header">
                     <div class="user">
                         <div class="user__image">
-                            <img src="assets/images/users/user-01.png" alt="Avatar">
+                            <img src="{{ asset('frontend') }}/images/users/user-01.png" alt="Avatar">
                             <span class="user-active"></span>
                         </div>
                         <div class="user__info">
@@ -1386,7 +1386,7 @@
                             <div class="user user-active">
                                 <div class="user-wrapper">
                                     <div class="user-img">
-                                        <img src="assets/images/users/user-01.png" alt="user-img">
+                                        <img src="{{ asset('frontend') }}/images/users/user-01.png" alt="user-img">
                                     </div>
                                     <span class="time">2:53 PM</span>
                                 </div>
@@ -1433,7 +1433,7 @@
                             <div class="user user-active">
                                 <div class="user-wrapper">
                                     <div class="user-img">
-                                        <img src="assets/images/users/user-01.png" alt="user-img">
+                                        <img src="{{ asset('frontend') }}/images/users/user-01.png" alt="user-img">
                                     </div>
                                     <span class="time">2:53 PM</span>
                                 </div>
@@ -1477,7 +1477,7 @@
                             <div class="user user-active">
                                 <div class="user-wrapper">
                                     <div class="user-img">
-                                        <img src="assets/images/users/user-01.png" alt="user-img">
+                                        <img src="{{ asset('frontend') }}/images/users/user-01.png" alt="user-img">
                                     </div>
                                     <span class="time">2:53 PM</span>
                                 </div>
@@ -1553,7 +1553,7 @@
                         <div class="faq-review-item">
                             <div class="faq-review-item-content">
                                 <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"> <img
-                                        src="assets/images/faq-thumb1.png" alt="" /></a>
+                                        src="{{ asset('frontend') }}/images/faq-thumb1.png" alt="" /></a>
                                 <div class="faq-review-data">
                                     <div class="faq-review-data-inner">
                                         <div class="faq-review-data-top">
@@ -1597,7 +1597,7 @@
                         <div class="faq-review-item">
                             <div class="faq-review-item-content">
                                 <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"> <img
-                                        src="assets/images/team2.png" alt="" /></a>
+                                        src="{{ asset('frontend') }}/images/team2.png" alt="" /></a>
                                 <div class="faq-review-data">
                                     <div class="faq-review-data-inner">
                                         <div class="faq-review-data-top">
@@ -1643,7 +1643,7 @@
                         <div class="faq-review-item">
                             <div class="faq-review-item-content">
                                 <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"> <img
-                                        src="assets/images/team1.png" alt="" /></a>
+                                        src="{{ asset('frontend') }}/images/team1.png" alt="" /></a>
                                 <div class="faq-review-data">
                                     <div class="faq-review-data-inner">
                                         <div class="faq-review-data-top">
@@ -1765,7 +1765,7 @@
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb1.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -1791,7 +1791,7 @@
                                         </div>
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb2.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -1954,7 +1954,7 @@
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb1.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -1980,7 +1980,7 @@
                                         </div>
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb2.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -2143,7 +2143,7 @@
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb1.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -2169,7 +2169,7 @@
                                         </div>
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb2.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -2332,7 +2332,7 @@
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb1.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -2358,7 +2358,7 @@
                                         </div>
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb2.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -2521,7 +2521,7 @@
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb1.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -2547,7 +2547,7 @@
                                         </div>
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb2.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -2710,7 +2710,7 @@
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb1.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -2736,7 +2736,7 @@
                                         </div>
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb2.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -2899,7 +2899,7 @@
                                     <div class="faq-review-wrap">
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb1.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb1.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>
@@ -2925,7 +2925,7 @@
                                         </div>
                                         <div class="faq-review-item">
                                             <a class="faq-review-thumb" href="{{ route('website.course.details', '123') }}"><img
-                                                    src="assets/images/faq-thumb2.png" alt="" /></a>
+                                                    src="{{ asset('frontend') }}/images/faq-thumb2.png" alt="" /></a>
                                             <div class="faq-review-data">
                                                 <div class="faq-review-data-top">
                                                     <h5>

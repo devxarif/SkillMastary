@@ -13043,7 +13043,7 @@ color: #1d2026;
 background-color: transparent;
 }
 
-/* .student-tabs-wrap .nav-pills .nav-link.active::before
+.student-tabs-wrap .nav-pills .nav-link.active::before
 {
 content: "";
 left: 0;
@@ -13053,7 +13053,7 @@ height: 3px;
 transition: all 0.3s;
 position: absolute;
 background-color: #ff6636;
-} */
+}
 
 .student-profile-menu ul li a.active {
     border-bottom: 3px solid #ff6636 !important;

@@ -1,18 +1,50 @@
 <?php
 
+use App\Models\User;
+use App\Models\Course;
+use App\Models\Category;
+use App\Models\Subcategory;
+use App\Models\CourseWishlist;
+use Illuminate\Support\Number;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\AuthController;
 use App\Http\Controllers\Frontend\StudentController;
 use App\Http\Controllers\Frontend\WebsiteController;
 use App\Http\Controllers\Frontend\InstructorController;
-use App\Http\Controllers\Frontend\SocialLoginController;
 use App\Http\Controllers\Frontend\WebsiteApiController;
-use App\Models\Course;
-use App\Models\CourseWishlist;
-use App\Models\User;
-use Illuminate\Support\Number;
+use App\Http\Controllers\Frontend\SocialLoginController;
 
 Route::get('/test', function(){
+    // $categories = \File::json(resource_path('content/categories.json'));
+
+    // foreach ($categories as $category) {
+    //     $cat = Category::whereName($category)->first();
+    //     // return $category['subcategories'];
+    //     // $category = Category::create([
+    //     //     'name' => $category['name'],
+    //     //     'image' => $category['image'],
+    //     // ]);
+
+    //     foreach ($category['subcategories'] as $subcategory) {
+    //         if (Subcategory::whereName($subcategory)->doesntExist()) {
+    //             $subcat = Subcategory::create([
+    //                 'category_id' => $cat->id,
+    //                 'name' => $subcategory
+    //             ]);
+    //         }
+
+
+    //         // $category->subcategories()->create([
+    //         //     'name' => $subcategory
+    //         // ]);
+    //     }
+    // }
+
+
+
+    $categories = Category::with('subcategories')->get();
+
+    return $categories;
     return today()->format('Y-m-d')->timezone('Asia/Dhaka');
     return url()->previous();
     return request()->getRequestUri();
@@ -87,6 +119,7 @@ Route::name('website.')->group(function(){
 
     Route::controller(WebsiteApiController::class)->group(function(){
         Route::get('/fetch/courses', 'fetchCourse');
+        Route::get('/fetch/resources', 'fetchResource');
         Route::get('/fetch/current/url', 'fetchCurrentUrl');
     });
 

@@ -386,10 +386,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="header-btn-wrap">
-                <a class="header-btn orange-btn" href="{{ route('website.register') }}">{{ __('Create Account') }}</a>
-                <a class="header-btn div-orange-btn" href="{{ route('website.login') }}">{{ __('Sign In') }}</a>
-            </div>
+            @if (authCheck())
+                <a class="header-user" href="#">
+                    <img src="{{ authUser()->avatar_url }}" alt="">
+                </a>
+            @else
+                <div class="header-btn-wrap">
+                    <a class="header-btn orange-btn" href="{{ route('website.register') }}">{{ __('Create Account') }}</a>
+                    <a class="header-btn div-orange-btn" href="{{ route('website.login') }}">{{ __('Sign In') }}</a>
+                </div>
+            @endif
         </div>
     </div>
 </header>

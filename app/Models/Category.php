@@ -13,6 +13,15 @@ class Category extends Model
 
     protected $guarded = [];
 
+    protected $appends = [
+        'image_url',
+    ];
+
+    public function getImageUrlAttribute()
+    {
+        return $this->image ? asset($this->image) : asset('frontend/images/default.webp');
+    }
+
     public function setNameAttribute($value)
     {
         $this->attributes['name'] = $value;
@@ -21,7 +30,7 @@ class Category extends Model
 
     public function subcategories()
     {
-        return $this->hasMany(Subcategory::class);
+        return $this->hasMany(Subcategory::class, 'category_id');
     }
 
     public function courses()

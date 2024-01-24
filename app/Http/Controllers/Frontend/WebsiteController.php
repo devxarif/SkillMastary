@@ -55,13 +55,16 @@ class WebsiteController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function course(Request $request){
-        if ($request->hasAny(['page','search', 'category', 'level', 'price', 'duration', 'rating'])) {
-            // request()->remove('api');
+        // if ($request->api) {
+        //     # code...
+        //     if ($request->hasAny(['page','search', 'category', 'level', 'price', 'duration', 'rating'])) {
+        //         // request()->remove('api');
 
-            // unset($request['api']);
+        //         // unset($request['api']);
 
-            return (new FetchCourseQueryService())->execute($request);
-        }
+        //         return (new FetchCourseQueryService())->execute($request);
+        //     }
+        // }
 
         return view('frontend.pages.others.course');
     }

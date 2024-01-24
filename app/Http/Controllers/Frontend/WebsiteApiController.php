@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Services\Frontend\Public\FetchCourseQueryService;
+use App\Services\Frontend\Public\FetchCourseResourceService;
 
 class WebsiteApiController extends Controller
 {
@@ -13,8 +14,17 @@ class WebsiteApiController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function fetchCourse(){
-        return (new FetchCourseQueryService())->execute();
+    public function fetchCourse(Request $request){
+        return (new FetchCourseQueryService())->execute($request);
+    }
+
+    /**
+     * Show the application course page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function fetchResource(Request $request){
+        return (new FetchCourseResourceService())->execute($request);
     }
 
     /**
