@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use App\Models\User;
 use App\Traits\HasUser;
 use App\Models\Category;
+use App\Traits\Sluggable;
 use App\Traits\HasFeature;
 use App\Models\CourseLevel;
 use App\Models\Subcategory;
@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Course extends Model
 {
-    use HasFactory, SoftDeletes, HasFeature, HasUser;
+    use HasFactory, SoftDeletes, HasFeature, HasUser, Sluggable;
 
     protected $guarded = [];
 
@@ -41,12 +41,6 @@ class Course extends Model
     public function scopePopular($query)
     {
         return $query->where('is_popular', true);
-    }
-
-    public function setTitleAttribute($value)
-    {
-        $this->attributes['title'] = $value;
-        $this->attributes['slug'] = \Str::slug($value);
     }
 
     public function getThumbnailUrlAttribute()
@@ -95,10 +89,13 @@ class Course extends Model
         return $this->belongsTo(CourseLevel::class);
     }
 
+    public function courseLearnings()
+    {
+        return $this->hasMany(CourseLearning::class);
+    }
+
     public function wishlists()
     {
         return $this->hasMany(CourseWishlist::class);
     }
-
-
 }

@@ -103,7 +103,44 @@ if (! function_exists('flashWarning')) {
 | Reusable Helpers
 |--------------------------------------------------------------------------
 */
+/**
+ * Generate social media share links for a given path and social media provider.
+ *
+ * @param string $path The path or content to be shared.
+ * @param string $provider The social media provider ('facebook', 'twitter', 'linkedin', 'gmail', 'whatsapp', 'skype', 'telegram').
+ * @return string The generated social media share link.
+ */
 
+ if (! function_exists('socialMediaShareLinks')) {
+    function socialMediaShareLinks(string $path, string $provider)
+    {
+        switch ($provider) {
+            case 'facebook':
+                $share_link = 'https://www.facebook.com/sharer/sharer.php?u='.$path;
+                break;
+            case 'twitter':
+                $share_link = 'https://twitter.com/intent/tweet?text='.$path;
+                break;
+            case 'linkedin':
+                $share_link = 'https://www.linkedin.com/shareArticle?mini=true&url='.$path;
+                break;
+            case 'gmail':
+                $share_link = 'https://mail.google.com/mail/u/0/?ui=2&fs=1&tf=cm&su='.$path;
+                break;
+            case 'whatsapp':
+                $share_link = 'https://wa.me/?text='.$path;
+                break;
+            case 'skype':
+                $share_link = 'https://web.skype.com/share?url=' . $path;
+                break;
+            case 'telegram':
+                $share_link = 'https://t.me/share/url?url=' . $path;
+                break;
+        }
+
+        return $share_link;
+    }
+}
 
 
 /*

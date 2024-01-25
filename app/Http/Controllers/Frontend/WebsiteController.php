@@ -75,7 +75,12 @@ class WebsiteController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function courseDetails(Course $course){
-        $course->load('category', 'subcategory', 'user');
+        $course->load([
+            'category:id,name,slug',
+            'subcategory:id,name,slug',
+            'user:id,name,avatar,username',
+            'courseLearnings:id,name,course_id'
+        ]);
 
         return view('frontend.pages.others.course-details', compact('course'));
     }

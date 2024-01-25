@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Course;
 use App\Models\CourseRating;
+use App\Models\CourseLearning;
 use App\Models\CourseWishlist;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -22,6 +23,10 @@ class CourseSeeder extends Seeder
             CourseWishlist::factory(rand(1, 10))->create([
                 'course_id' => $course->id,
             ]);
+            CourseLearning::factory(10)->create([
+                'course_id' => $course->id,
+            ]);
+
             // $course->categories()->attach(rand(1, 4));
             // $course->subcategories()->attach(rand(1, 4));
             // $course->levels()->attach(rand(1, 4));

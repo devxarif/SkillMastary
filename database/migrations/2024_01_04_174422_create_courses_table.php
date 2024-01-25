@@ -25,7 +25,7 @@ return new class extends Migration
             $table->foreignIdFor(CourseLevel::class)->nullable()->constrained()->nullOnDelete();
             $table->string('title');
             $table->string('slug')->unique();
-            $table->mediumText('description')->nullable();
+            $table->longText('description')->nullable();
             $table->string('thumbnail')->nullable();
             $table->string('video')->nullable();
             $table->string('currency')->default('USD');
